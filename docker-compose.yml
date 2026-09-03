@@ -1,0 +1,185 @@
+services:
+  # 1. Base de Datos MySQL (Aislada exclusivamente en red interna de backend)
+  db:
+    image: mysql:8.0
+    container_name: financeai_v2_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_USER: dev_user
+      MYSQL_PASSWORD: dev_password
+    ports:
+      - "127.0.0.1:3307:3306"
+    volumes:
+      - mysql_v2_data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - backend-net
+    restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1024M
+
+  # 2. Microservicio de ML & Inferencia (Python + FastAPI)
+  ml-service:
+    build:
+      context: ./services/ml-service
+      dockerfile: Dockerfile
+    container_name: financeai_v2_ml
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - backend-net
+    restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 1024M
+
+  # 3. Microservicio de Autenticación y Usuarios (Java + Spring Boot)
+  auth-service:
+    build:
+      context: ./services/auth-service
+      dockerfile: Dockerfile
+    container_name: financeai_v2_auth
+    ports:
+      - "127.0.0.1:8081:8081"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=${DB_USER:-dev_user}
+      - DB_PASSWORD=${DB_PASSWORD:-dev_password}
+      - JWT_SECRET=${JWT_SECRET:-FinanceAI_Secret_Key_Super_Segura_2026_JWT_Token_HS256_Min$}
+    depends_on:
+      - db
+    networks:
+      - backend-net
+      - frontend-net
+    restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 1024M
+
+  # 4. Microservicio de Transacciones y Finanzas (Java + Spring Boot)
+  transaction-service:
+    build:
+      context: ./services/transaction-service
+      dockerfile: Dockerfile
+    container_name: financeai_v2_transactions
+    ports:
+      - "127.0.0.1:8082:8082"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=${DB_USER:-dev_user}
+      - DB_PASSWORD=${DB_PASSWORD:-dev_password}
+      - JWT_SECRET=${JWT_SECRET:-FinanceAI_Secret_Key_Super_Segura_2026_JWT_Token_HS256_Min$}
+      - ML_SERVICE_URL=http://ml-service:8000
+      - AUTH_SERVICE_URL=http://auth-service:8081
+    depends_on:
+      - db
+      - ml-service
+      - auth-service
+    networks:
+      - backend-net
+      - frontend-net
+    restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 1024M
+
+  # 5. Frontend (Vue 3 + Vite)
+  frontend:
+    image: node:22-alpine
+    container_name: financeai_v2_frontend
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - VITE_API_BASE_URL=/api/v1
+      - VITE_GATEWAY_URL=http://gateway:80
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    depends_on:
+      - auth-service
+      - transaction-service
+    networks:
+      - frontend-net
+    restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+
+  # 6. API Gateway / Reverse Proxy (Nginx)
+  gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    container_name: financeai_v2_gateway
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      - auth-service
+      - transaction-service
+      - ml-service
+      - frontend
+    networks:
+      - frontend-net
+      - backend-net
+    restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+
+networks:
+  backend-net:
+    driver: bridge
+  frontend-net:
+    driver: bridge
+
+volumes:
+  mysql_v2_data:

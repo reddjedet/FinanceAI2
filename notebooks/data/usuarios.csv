@@ -1,0 +1,1201 @@
+id,nombre,email,ingreso_mensual,nivel_endeudamiento,frecuencia_ahorro,perfil_financiero,score_riesgo_oculto,split
+1,User_1,user1@example.com,3402.97,18.32,NINGUNA,En observacion,0.5845794217344692,train
+2,User_2,user2@example.com,2479.86,58.69,MEDIA,En observacion,0.5459793614576454,train
+3,User_3,user3@example.com,1410.22,26.29,BAJA,En observacion,0.47560488464109263,val
+4,User_4,user4@example.com,2621.48,38.63,NINGUNA,En observacion,0.5790182377671101,train
+5,User_5,user5@example.com,3598.22,47.25,NINGUNA,En riesgo,0.618964575119207,train
+6,User_6,user6@example.com,2388.54,21.38,BAJA,En observacion,0.39080968993323545,train
+7,User_7,user7@example.com,3681.97,25.56,NINGUNA,En riesgo,0.6258690858456304,train
+8,User_8,user8@example.com,3891.88,26.83,ALTA,Saludable,0.20330837948549327,train
+9,User_9,user9@example.com,4256.88,26.0,MEDIA,En observacion,0.374555491052332,val
+10,User_10,user10@example.com,2129.24,25.97,NINGUNA,En riesgo,0.719555659225447,val
+11,User_11,user11@example.com,2285.82,27.0,BAJA,En observacion,0.4883644818839937,train
+12,User_12,user12@example.com,5941.09,47.34,MEDIA,En observacion,0.33059238000144886,train
+13,User_13,user13@example.com,3174.63,76.67,BAJA,En riesgo,0.755172673714116,test
+14,User_14,user14@example.com,2628.67,46.08,MEDIA,En observacion,0.4566408515594986,train
+15,User_15,user15@example.com,2065.24,19.86,ALTA,Saludable,0.12148203932315563,train
+16,User_16,user16@example.com,3015.56,28.09,MEDIA,En observacion,0.41271936131094583,train
+17,User_17,user17@example.com,3054.35,18.04,NINGUNA,En observacion,0.5806323816314012,val
+18,User_18,user18@example.com,5197.58,24.85,NINGUNA,En observacion,0.5949541894420434,test
+19,User_19,user19@example.com,1116.06,43.73,ALTA,En observacion,0.37024629797966785,train
+20,User_20,user20@example.com,4805.08,22.41,MEDIA,Saludable,0.28528913120743926,val
+21,User_21,user21@example.com,5584.58,12.38,MEDIA,Saludable,0.295981473789241,train
+22,User_22,user22@example.com,1872.27,18.4,NINGUNA,En observacion,0.5378846062959665,train
+23,User_23,user23@example.com,4808.06,47.52,BAJA,En observacion,0.5485169442164486,val
+24,User_24,user24@example.com,3739.06,40.42,NINGUNA,En riesgo,0.6295266372697439,test
+25,User_25,user25@example.com,4968.01,57.43,NINGUNA,En riesgo,0.732193875099666,train
+26,User_26,user26@example.com,3816.76,5.0,ALTA,Saludable,0.14203087521876118,train
+27,User_27,user27@example.com,1478.11,13.72,MEDIA,En observacion,0.37615001836697104,train
+28,User_28,user28@example.com,3870.91,31.7,MEDIA,En observacion,0.37792606607558726,train
+29,User_29,user29@example.com,3524.86,23.16,MEDIA,En observacion,0.3653144391885613,val
+30,User_30,user30@example.com,1980.07,22.87,NINGUNA,En observacion,0.5907008353207732,train
+31,User_31,user31@example.com,6127.37,42.52,BAJA,En observacion,0.5443611451466014,train
+32,User_32,user32@example.com,5643.97,27.05,BAJA,En observacion,0.4515639341556678,train
+33,User_33,user33@example.com,5803.11,55.58,ALTA,Saludable,0.3000793521977417,train
+34,User_34,user34@example.com,5831.24,24.47,BAJA,En observacion,0.39439614267011164,train
+35,User_35,user35@example.com,2830.6,54.11,NINGUNA,En riesgo,0.7258236164587191,train
+36,User_36,user36@example.com,5568.05,35.08,NINGUNA,En observacion,0.5917297058312427,val
+37,User_37,user37@example.com,3548.62,29.07,ALTA,Saludable,0.19982153217650292,train
+38,User_38,user38@example.com,3271.33,32.58,BAJA,En observacion,0.5154751053407269,test
+39,User_39,user39@example.com,3908.84,20.85,MEDIA,En observacion,0.3807321869329647,train
+40,User_40,user40@example.com,6630.38,6.22,ALTA,Saludable,0.052344681227539165,train
+41,User_41,user41@example.com,3069.97,36.54,ALTA,Saludable,0.23523759847259934,train
+42,User_42,user42@example.com,3849.22,32.11,BAJA,En observacion,0.49739949211668066,train
+43,User_43,user43@example.com,2419.0,40.1,MEDIA,En observacion,0.42472474250277137,val
+44,User_44,user44@example.com,2892.55,52.14,ALTA,En observacion,0.36799133913433874,test
+45,User_45,user45@example.com,2873.37,22.97,ALTA,Saludable,0.26869009844663394,train
+46,User_46,user46@example.com,4360.86,43.8,BAJA,En riesgo,0.6348566562904989,train
+47,User_47,user47@example.com,2078.02,27.6,NINGUNA,En riesgo,0.6813952554170976,val
+48,User_48,user48@example.com,2636.88,36.49,NINGUNA,En riesgo,0.6395897172941901,train
+49,User_49,user49@example.com,4560.4,35.14,BAJA,En observacion,0.46434553515837285,val
+50,User_50,user50@example.com,2824.18,19.07,ALTA,Saludable,0.2065412465317591,train
+51,User_51,user51@example.com,4622.0,44.31,ALTA,Saludable,0.2546856311568469,train
+52,User_52,user52@example.com,2377.26,23.25,ALTA,Saludable,0.19394829918971623,train
+53,User_53,user53@example.com,6079.36,29.65,NINGUNA,En observacion,0.5972430899266984,train
+54,User_54,user54@example.com,4481.32,38.41,NINGUNA,En riesgo,0.7041773877141215,train
+55,User_55,user55@example.com,3949.6,30.13,MEDIA,En observacion,0.3412366641452247,val
+56,User_56,user56@example.com,5840.3,38.9,MEDIA,En observacion,0.39463551858886553,train
+57,User_57,user57@example.com,3276.5,54.49,ALTA,Saludable,0.2904133171975224,train
+58,User_58,user58@example.com,5839.44,38.76,NINGUNA,En riesgo,0.6322529104748489,test
+59,User_59,user59@example.com,4402.65,38.39,MEDIA,En observacion,0.42257538412883194,test
+60,User_60,user60@example.com,1207.89,39.4,BAJA,En observacion,0.5289344915986816,train
+61,User_61,user61@example.com,1102.6,37.62,NINGUNA,En riesgo,0.6377735053820381,test
+62,User_62,user62@example.com,4626.46,17.13,MEDIA,Saludable,0.3131665554316915,val
+63,User_63,user63@example.com,4722.66,23.73,BAJA,En observacion,0.37171372234397354,train
+64,User_64,user64@example.com,4893.46,49.45,BAJA,En observacion,0.5614116713468249,train
+65,User_65,user65@example.com,4470.81,21.99,NINGUNA,En observacion,0.5724204051214155,train
+66,User_66,user66@example.com,3379.14,21.66,ALTA,Saludable,0.14332061075172808,train
+67,User_67,user67@example.com,6649.52,48.18,MEDIA,En observacion,0.37015177459030946,test
+68,User_68,user68@example.com,4355.88,35.2,MEDIA,En observacion,0.43940395385786585,train
+69,User_69,user69@example.com,4132.66,13.9,BAJA,En observacion,0.3933361421952596,test
+70,User_70,user70@example.com,4772.68,18.94,NINGUNA,En observacion,0.5698658707621592,train
+71,User_71,user71@example.com,6236.79,33.14,ALTA,Saludable,0.21920722839738693,val
+72,User_72,user72@example.com,6554.67,22.3,BAJA,Saludable,0.3117075762657068,train
+73,User_73,user73@example.com,5502.62,21.11,ALTA,Saludable,0.11617260911821889,test
+74,User_74,user74@example.com,4053.59,37.6,BAJA,En observacion,0.5224610564864419,train
+75,User_75,user75@example.com,4105.54,38.46,ALTA,Saludable,0.20564428043048197,test
+76,User_76,user76@example.com,6983.71,35.87,BAJA,En observacion,0.3833219226084688,val
+77,User_77,user77@example.com,5687.16,48.09,ALTA,Saludable,0.31308067720488697,test
+78,User_78,user78@example.com,4676.27,14.33,MEDIA,Saludable,0.2199136855042438,train
+79,User_79,user79@example.com,5239.66,39.57,ALTA,Saludable,0.24268174954900534,train
+80,User_80,user80@example.com,5975.15,42.73,BAJA,En riesgo,0.682887512032736,train
+81,User_81,user81@example.com,5174.99,54.96,NINGUNA,En riesgo,0.7496990680252056,train
+82,User_82,user82@example.com,5160.61,30.27,BAJA,En observacion,0.4874020235246634,train
+83,User_83,user83@example.com,3406.59,37.48,NINGUNA,En riesgo,0.6119899916085316,train
+84,User_84,user84@example.com,1606.35,69.72,NINGUNA,En riesgo,0.7402576778704126,train
+85,User_85,user85@example.com,3076.74,28.78,NINGUNA,En riesgo,0.6258310606270409,test
+86,User_86,user86@example.com,1621.97,27.92,NINGUNA,En riesgo,0.6996755923483683,train
+87,User_87,user87@example.com,2316.09,58.41,MEDIA,En observacion,0.5158458625035541,train
+88,User_88,user88@example.com,2775.91,24.04,BAJA,En observacion,0.47695461697909874,train
+89,User_89,user89@example.com,1766.91,70.84,ALTA,En observacion,0.5278211254160267,train
+90,User_90,user90@example.com,4382.81,5.0,ALTA,Saludable,0.09964502823847138,val
+91,User_91,user91@example.com,5157.14,28.33,BAJA,En observacion,0.35733200704547347,train
+92,User_92,user92@example.com,1991.33,42.57,ALTA,En observacion,0.3475153222085061,train
+93,User_93,user93@example.com,3520.04,29.99,ALTA,Saludable,0.20306190467447083,train
+94,User_94,user94@example.com,2927.65,61.48,NINGUNA,En riesgo,0.7920156480480479,train
+95,User_95,user95@example.com,4482.27,40.66,NINGUNA,En riesgo,0.7314949868239744,train
+96,User_96,user96@example.com,4274.18,12.21,MEDIA,Saludable,0.24059242135668737,val
+97,User_97,user97@example.com,3337.63,31.44,NINGUNA,En riesgo,0.7224997215236153,train
+98,User_98,user98@example.com,2130.35,5.0,BAJA,En observacion,0.3413365554332855,train
+99,User_99,user99@example.com,2570.09,5.08,BAJA,Saludable,0.31966117042032804,train
+100,User_100,user100@example.com,4291.38,28.4,MEDIA,En observacion,0.3438736538643045,train
+101,User_101,user101@example.com,3403.22,35.88,NINGUNA,En riesgo,0.7650494714225162,train
+102,User_102,user102@example.com,5538.86,20.28,NINGUNA,En observacion,0.5605115487131636,train
+103,User_103,user103@example.com,1929.86,31.96,NINGUNA,En riesgo,0.660679955355858,test
+104,User_104,user104@example.com,4168.15,36.7,BAJA,En observacion,0.5301037212260524,train
+105,User_105,user105@example.com,3449.9,25.77,ALTA,Saludable,0.3068452570808126,train
+106,User_106,user106@example.com,4010.38,32.72,ALTA,Saludable,0.2514612353242288,test
+107,User_107,user107@example.com,6480.15,27.7,BAJA,En observacion,0.423527100564286,train
+108,User_108,user108@example.com,3202.14,26.16,ALTA,Saludable,0.25015997985105126,train
+109,User_109,user109@example.com,2262.05,49.28,ALTA,En observacion,0.40197407487311854,train
+110,User_110,user110@example.com,5687.89,47.19,ALTA,Saludable,0.28718850459618056,train
+111,User_111,user111@example.com,3058.76,43.28,MEDIA,En observacion,0.3919018521036258,train
+112,User_112,user112@example.com,5224.74,34.69,NINGUNA,En riesgo,0.6140074941654392,train
+113,User_113,user113@example.com,3394.19,24.96,NINGUNA,En riesgo,0.6567758033873388,val
+114,User_114,user114@example.com,6137.76,31.73,NINGUNA,En riesgo,0.6326408425993596,train
+115,User_115,user115@example.com,4916.08,28.88,ALTA,Saludable,0.2008646527986233,train
+116,User_116,user116@example.com,5883.96,54.58,BAJA,En observacion,0.5463359420816379,train
+117,User_117,user117@example.com,3206.18,31.41,NINGUNA,En riesgo,0.6739278605533927,test
+118,User_118,user118@example.com,1242.78,39.86,NINGUNA,En riesgo,0.6995607222816158,train
+119,User_119,user119@example.com,6349.47,63.68,BAJA,En riesgo,0.6307687916273459,train
+120,User_120,user120@example.com,3655.31,19.91,BAJA,En observacion,0.3703485068606134,train
+121,User_121,user121@example.com,4537.48,46.56,NINGUNA,En riesgo,0.7077950551734896,train
+122,User_122,user122@example.com,5125.5,34.82,ALTA,Saludable,0.16572415642570842,train
+123,User_123,user123@example.com,1820.41,5.0,MEDIA,En observacion,0.3668888883283359,test
+124,User_124,user124@example.com,5765.2,22.62,BAJA,En observacion,0.38762320791735033,train
+125,User_125,user125@example.com,2408.33,44.21,MEDIA,En observacion,0.5116828519049994,train
+126,User_126,user126@example.com,2152.52,38.67,ALTA,Saludable,0.25830809123144355,train
+127,User_127,user127@example.com,1947.29,43.39,MEDIA,En observacion,0.49237039207152394,train
+128,User_128,user128@example.com,2013.09,13.28,NINGUNA,En observacion,0.5016413737811722,train
+129,User_129,user129@example.com,5260.14,25.04,NINGUNA,En riesgo,0.6320579433124086,train
+130,User_130,user130@example.com,2029.04,39.66,BAJA,En riesgo,0.6241933108474776,train
+131,User_131,user131@example.com,3571.79,30.47,BAJA,En observacion,0.4799157960504852,test
+132,User_132,user132@example.com,3726.42,39.84,NINGUNA,En riesgo,0.6180480778223838,test
+133,User_133,user133@example.com,4891.17,42.39,MEDIA,En observacion,0.39348921280658716,train
+134,User_134,user134@example.com,3404.11,45.35,ALTA,Saludable,0.2701869139057082,val
+135,User_135,user135@example.com,2811.18,36.04,MEDIA,En observacion,0.4486455903179232,train
+136,User_136,user136@example.com,7065.78,36.47,NINGUNA,En observacion,0.5429811358072266,train
+137,User_137,user137@example.com,6592.98,69.14,MEDIA,En observacion,0.4978229592524965,test
+138,User_138,user138@example.com,4644.49,67.3,NINGUNA,En riesgo,0.7273984343555975,test
+139,User_139,user139@example.com,4162.28,33.34,BAJA,En observacion,0.5308027063240551,train
+140,User_140,user140@example.com,4309.32,22.4,NINGUNA,En observacion,0.5400306177277989,val
+141,User_141,user141@example.com,3708.84,50.49,BAJA,En observacion,0.4771576837501992,train
+142,User_142,user142@example.com,1985.84,40.13,BAJA,En riesgo,0.6471590419607943,val
+143,User_143,user143@example.com,3166.3,43.57,BAJA,En observacion,0.5952230660006606,train
+144,User_144,user144@example.com,2515.15,15.2,MEDIA,En observacion,0.40281387579271766,train
+145,User_145,user145@example.com,6157.29,33.9,MEDIA,Saludable,0.3129897530506395,test
+146,User_146,user146@example.com,5246.74,9.3,NINGUNA,En observacion,0.5611672437082706,train
+147,User_147,user147@example.com,6602.06,39.13,ALTA,Saludable,0.21623252674853305,val
+148,User_148,user148@example.com,3726.54,11.08,NINGUNA,En observacion,0.5000186238523114,train
+149,User_149,user149@example.com,1809.87,38.89,BAJA,En observacion,0.5661873520165821,train
+150,User_150,user150@example.com,7413.02,35.08,MEDIA,Saludable,0.3112149046882371,train
+151,User_151,user151@example.com,5011.8,30.3,ALTA,Saludable,0.11242257637312586,train
+152,User_152,user152@example.com,2328.56,36.8,ALTA,Saludable,0.29766144170293746,train
+153,User_153,user153@example.com,2833.75,50.91,NINGUNA,En riesgo,0.8030307373459091,train
+154,User_154,user154@example.com,3345.42,39.98,BAJA,En observacion,0.4897590481721723,train
+155,User_155,user155@example.com,3914.51,36.72,MEDIA,En observacion,0.45940608023664853,train
+156,User_156,user156@example.com,5509.64,65.91,BAJA,En riesgo,0.6910562921221602,train
+157,User_157,user157@example.com,5681.85,19.69,NINGUNA,En observacion,0.5186155906035526,train
+158,User_158,user158@example.com,1521.58,44.68,NINGUNA,En riesgo,0.7909619528766175,test
+159,User_159,user159@example.com,4683.86,28.5,BAJA,En observacion,0.43331219306878005,train
+160,User_160,user160@example.com,1312.95,50.88,NINGUNA,En riesgo,0.6664052131788443,train
+161,User_161,user161@example.com,3463.77,48.29,ALTA,Saludable,0.2955054214479073,test
+162,User_162,user162@example.com,3309.97,57.54,BAJA,En riesgo,0.6105728015209888,test
+163,User_163,user163@example.com,3478.33,49.72,BAJA,En observacion,0.5850563403531966,test
+164,User_164,user164@example.com,6336.88,9.45,BAJA,En observacion,0.33093111505516903,test
+165,User_165,user165@example.com,3692.75,34.91,NINGUNA,En riesgo,0.6580119038542789,train
+166,User_166,user166@example.com,3238.67,15.43,MEDIA,En observacion,0.3321935649415019,val
+167,User_167,user167@example.com,1971.48,18.48,ALTA,Saludable,0.2205784137461647,val
+168,User_168,user168@example.com,3300.62,34.06,BAJA,En observacion,0.549140491025062,train
+169,User_169,user169@example.com,4515.13,28.3,NINGUNA,En observacion,0.5689077451015698,train
+170,User_170,user170@example.com,1659.83,27.05,NINGUNA,En riesgo,0.6009595458868828,test
+171,User_171,user171@example.com,2589.45,13.49,BAJA,En observacion,0.4125761713043354,train
+172,User_172,user172@example.com,3367.03,64.47,ALTA,En observacion,0.37874636509858634,train
+173,User_173,user173@example.com,1643.3,42.72,BAJA,En riesgo,0.6316598786287912,train
+174,User_174,user174@example.com,2016.15,33.32,BAJA,En observacion,0.5110887075233388,train
+175,User_175,user175@example.com,5221.01,23.95,MEDIA,Saludable,0.32885628257749266,test
+176,User_176,user176@example.com,2746.05,30.87,MEDIA,Saludable,0.26233050426322074,train
+177,User_177,user177@example.com,4301.44,25.6,ALTA,Saludable,0.07494149718790108,train
+178,User_178,user178@example.com,4898.5,43.65,MEDIA,En observacion,0.41014063272717677,test
+179,User_179,user179@example.com,3882.4,20.42,NINGUNA,En observacion,0.573069122590877,test
+180,User_180,user180@example.com,3651.71,10.9,MEDIA,Saludable,0.2807536192933611,train
+181,User_181,user181@example.com,3006.95,32.2,MEDIA,En observacion,0.3761301436313231,train
+182,User_182,user182@example.com,3213.8,25.3,ALTA,Saludable,0.14951384981928026,train
+183,User_183,user183@example.com,2271.9,38.27,MEDIA,En observacion,0.465145081118554,train
+184,User_184,user184@example.com,4567.41,34.88,NINGUNA,En riesgo,0.6953182694445013,train
+185,User_185,user185@example.com,2053.95,70.61,BAJA,En riesgo,0.7399600721343649,train
+186,User_186,user186@example.com,4888.06,19.44,ALTA,Saludable,0.13631194109581962,train
+187,User_187,user187@example.com,3065.72,55.94,BAJA,En observacion,0.5387652854994051,train
+188,User_188,user188@example.com,4108.37,14.02,NINGUNA,En observacion,0.5642065243345286,test
+189,User_189,user189@example.com,2156.92,28.13,MEDIA,En observacion,0.34484310348728,train
+190,User_190,user190@example.com,2504.91,26.11,NINGUNA,En observacion,0.5773283990160092,val
+191,User_191,user191@example.com,2570.97,5.0,MEDIA,Saludable,0.2985264225777584,train
+192,User_192,user192@example.com,6812.79,31.42,ALTA,Saludable,0.11827200439792013,train
+193,User_193,user193@example.com,6595.46,38.56,MEDIA,En observacion,0.35353399515693146,train
+194,User_194,user194@example.com,2959.97,42.51,BAJA,En observacion,0.4969178002600724,train
+195,User_195,user195@example.com,6124.24,65.65,ALTA,En observacion,0.4115761077718656,train
+196,User_196,user196@example.com,3050.52,25.06,BAJA,En observacion,0.49410268342965796,train
+197,User_197,user197@example.com,3219.78,39.2,MEDIA,Saludable,0.2689813827770149,train
+198,User_198,user198@example.com,2894.09,38.9,NINGUNA,En riesgo,0.6255699812447796,train
+199,User_199,user199@example.com,3085.02,17.91,BAJA,En observacion,0.44613800828516303,train
+200,User_200,user200@example.com,3771.0,25.22,MEDIA,En observacion,0.3351536835658207,train
+201,User_201,user201@example.com,3267.62,25.97,ALTA,Saludable,0.243609679731768,train
+202,User_202,user202@example.com,4578.4,42.95,ALTA,Saludable,0.32950843103289507,val
+203,User_203,user203@example.com,3736.79,8.45,BAJA,Saludable,0.3263287340482852,train
+204,User_204,user204@example.com,6125.73,40.57,MEDIA,Saludable,0.327508303164209,train
+205,User_205,user205@example.com,6214.51,42.32,MEDIA,En observacion,0.4429246422537601,train
+206,User_206,user206@example.com,5441.12,40.06,BAJA,En observacion,0.46765515169387667,train
+207,User_207,user207@example.com,2709.83,30.22,BAJA,En observacion,0.4792278364466828,val
+208,User_208,user208@example.com,5270.79,39.35,BAJA,En observacion,0.5920177274322719,train
+209,User_209,user209@example.com,3347.79,30.95,BAJA,En observacion,0.5338847843830705,test
+210,User_210,user210@example.com,5282.99,5.0,NINGUNA,En observacion,0.4230396219541298,train
+211,User_211,user211@example.com,3705.24,50.77,BAJA,En observacion,0.5268145018877265,val
+212,User_212,user212@example.com,3849.37,39.9,ALTA,Saludable,0.24641928605955676,train
+213,User_213,user213@example.com,3435.26,48.39,BAJA,En observacion,0.5681248972944697,train
+214,User_214,user214@example.com,4326.61,12.82,NINGUNA,En observacion,0.5837537646603465,test
+215,User_215,user215@example.com,2387.27,42.64,NINGUNA,En riesgo,0.7594850402615861,val
+216,User_216,user216@example.com,3964.01,37.73,BAJA,En observacion,0.5178708418150167,train
+217,User_217,user217@example.com,2456.44,18.63,ALTA,Saludable,0.14692667803695528,train
+218,User_218,user218@example.com,4880.41,36.07,BAJA,En observacion,0.45692444016174416,test
+219,User_219,user219@example.com,4976.89,29.79,NINGUNA,En riesgo,0.6321952467292635,train
+220,User_220,user220@example.com,5311.32,30.95,ALTA,Saludable,0.14074956421088464,train
+221,User_221,user221@example.com,5169.23,28.59,MEDIA,Saludable,0.29409964883264966,test
+222,User_222,user222@example.com,4771.7,48.04,ALTA,En observacion,0.34449251794024754,train
+223,User_223,user223@example.com,4636.05,10.52,ALTA,Saludable,0.12446227854590995,val
+224,User_224,user224@example.com,3300.73,8.32,ALTA,Saludable,0.20035352807445916,test
+225,User_225,user225@example.com,3702.86,37.71,ALTA,En observacion,0.3824449541699275,train
+226,User_226,user226@example.com,4273.08,36.64,BAJA,En observacion,0.5310480811949346,val
+227,User_227,user227@example.com,4648.73,38.25,MEDIA,En observacion,0.39706714576567365,val
+228,User_228,user228@example.com,2461.15,63.23,ALTA,En observacion,0.45565943980774887,train
+229,User_229,user229@example.com,3571.48,37.76,MEDIA,En observacion,0.3979595221289849,train
+230,User_230,user230@example.com,6087.64,20.16,MEDIA,Saludable,0.26028740399501754,train
+231,User_231,user231@example.com,6862.62,73.08,MEDIA,En observacion,0.5163835083553896,train
+232,User_232,user232@example.com,3486.63,32.63,NINGUNA,En riesgo,0.610116634002629,train
+233,User_233,user233@example.com,5201.41,47.78,BAJA,En observacion,0.41144669380109355,train
+234,User_234,user234@example.com,6034.44,15.65,BAJA,Saludable,0.3025253113968192,val
+235,User_235,user235@example.com,4847.65,12.46,NINGUNA,En observacion,0.502139804255409,train
+236,User_236,user236@example.com,3669.25,31.31,MEDIA,En observacion,0.3484603840126165,train
+237,User_237,user237@example.com,3833.43,47.07,ALTA,Saludable,0.28207749283177747,train
+238,User_238,user238@example.com,3360.41,62.73,ALTA,En observacion,0.4256055639773879,train
+239,User_239,user239@example.com,1286.7,19.74,NINGUNA,En riesgo,0.6405378404324061,test
+240,User_240,user240@example.com,6478.57,30.97,ALTA,Saludable,0.11256551706291647,train
+241,User_241,user241@example.com,2042.57,35.01,MEDIA,En observacion,0.41715961154766834,train
+242,User_242,user242@example.com,4207.03,35.21,ALTA,Saludable,0.2283569331444998,test
+243,User_243,user243@example.com,2748.64,33.28,ALTA,Saludable,0.25597483117977593,train
+244,User_244,user244@example.com,2657.29,34.51,BAJA,En observacion,0.4882995739433117,train
+245,User_245,user245@example.com,4085.0,55.83,MEDIA,En observacion,0.33167368214753135,train
+246,User_246,user246@example.com,3628.62,53.69,NINGUNA,En riesgo,0.6198988633795924,train
+247,User_247,user247@example.com,2475.8,39.35,ALTA,Saludable,0.2679126865813818,val
+248,User_248,user248@example.com,6298.29,13.89,ALTA,Saludable,0.055521228120456234,test
+249,User_249,user249@example.com,4411.18,29.57,NINGUNA,En observacion,0.5968758838543495,test
+250,User_250,user250@example.com,2480.71,49.04,NINGUNA,En riesgo,0.787744442249708,train
+251,User_251,user251@example.com,1500.12,24.43,ALTA,Saludable,0.1953919925026057,train
+252,User_252,user252@example.com,4534.65,27.13,ALTA,Saludable,0.2115290405613959,train
+253,User_253,user253@example.com,4449.36,29.74,MEDIA,Saludable,0.3289436974223204,train
+254,User_254,user254@example.com,2897.38,45.66,BAJA,En observacion,0.583357290574302,train
+255,User_255,user255@example.com,5366.9,59.7,MEDIA,En observacion,0.4076661567846869,val
+256,User_256,user256@example.com,2725.66,43.9,ALTA,Saludable,0.2809665530343005,train
+257,User_257,user257@example.com,1284.98,9.95,ALTA,Saludable,0.25891597171313596,train
+258,User_258,user258@example.com,5804.01,27.16,NINGUNA,En riesgo,0.6158452737918445,train
+259,User_259,user259@example.com,2966.33,54.74,NINGUNA,En riesgo,0.6530559601530893,test
+260,User_260,user260@example.com,3002.11,15.79,MEDIA,En observacion,0.3925051465992182,train
+261,User_261,user261@example.com,4035.16,8.7,NINGUNA,En observacion,0.48624463825205466,val
+262,User_262,user262@example.com,6324.65,26.83,NINGUNA,En observacion,0.5721046182176036,val
+263,User_263,user263@example.com,5622.49,49.58,BAJA,En observacion,0.5261403999681714,train
+264,User_264,user264@example.com,5184.0,29.55,NINGUNA,En observacion,0.5829277188139466,train
+265,User_265,user265@example.com,3004.63,67.33,BAJA,En riesgo,0.6902610517206887,train
+266,User_266,user266@example.com,2959.9,37.56,NINGUNA,En riesgo,0.654322708182366,train
+267,User_267,user267@example.com,6853.45,15.67,BAJA,En observacion,0.3570536836127026,train
+268,User_268,user268@example.com,3019.47,37.94,MEDIA,En observacion,0.35519629861924834,val
+269,User_269,user269@example.com,3026.58,65.08,BAJA,En riesgo,0.6819912039896523,train
+270,User_270,user270@example.com,5363.9,38.84,NINGUNA,En riesgo,0.6733414241972757,val
+271,User_271,user271@example.com,4227.97,19.94,BAJA,En observacion,0.4459703819791162,test
+272,User_272,user272@example.com,5985.48,7.39,NINGUNA,En observacion,0.40704840166321493,train
+273,User_273,user273@example.com,3909.32,29.78,MEDIA,En observacion,0.3606381681448146,train
+274,User_274,user274@example.com,4238.78,25.83,ALTA,Saludable,0.1164248201575889,train
+275,User_275,user275@example.com,3085.27,55.12,BAJA,En observacion,0.5560022980567867,train
+276,User_276,user276@example.com,3118.39,20.76,BAJA,En observacion,0.5765692907418696,train
+277,User_277,user277@example.com,4497.73,36.43,MEDIA,En observacion,0.3785544023274482,test
+278,User_278,user278@example.com,2771.87,26.37,NINGUNA,En riesgo,0.6227929282322681,val
+279,User_279,user279@example.com,3826.12,9.66,NINGUNA,En observacion,0.5710863600064355,train
+280,User_280,user280@example.com,5022.19,34.48,ALTA,Saludable,0.2995339692817755,train
+281,User_281,user281@example.com,4610.22,11.63,NINGUNA,En observacion,0.4958743069908342,train
+282,User_282,user282@example.com,5298.17,44.49,MEDIA,En observacion,0.4394920349813365,train
+283,User_283,user283@example.com,3018.81,8.56,ALTA,Saludable,0.1891240726308209,val
+284,User_284,user284@example.com,2087.14,33.88,NINGUNA,En riesgo,0.694359729877534,train
+285,User_285,user285@example.com,2630.04,50.97,MEDIA,En observacion,0.47603203344435346,train
+286,User_286,user286@example.com,4821.12,43.4,ALTA,Saludable,0.3089430362777311,val
+287,User_287,user287@example.com,4628.24,28.19,ALTA,Saludable,0.22172258168967326,train
+288,User_288,user288@example.com,3800.89,41.44,MEDIA,En observacion,0.4155976968581555,train
+289,User_289,user289@example.com,2607.38,47.28,ALTA,Saludable,0.3205640077123,train
+290,User_290,user290@example.com,1583.63,18.78,MEDIA,En observacion,0.39747458016664516,train
+291,User_291,user291@example.com,6076.56,51.94,BAJA,En observacion,0.5257737113145503,val
+292,User_292,user292@example.com,5458.9,49.07,NINGUNA,En riesgo,0.6426583885891314,train
+293,User_293,user293@example.com,1618.21,13.92,ALTA,Saludable,0.20735022967586725,train
+294,User_294,user294@example.com,2276.84,38.33,ALTA,Saludable,0.25585681891682616,train
+295,User_295,user295@example.com,3279.58,31.08,ALTA,Saludable,0.23511711104098443,train
+296,User_296,user296@example.com,3188.22,56.7,ALTA,En observacion,0.3551986138255788,test
+297,User_297,user297@example.com,3201.3,48.02,BAJA,En observacion,0.5802172352697609,train
+298,User_298,user298@example.com,4291.44,36.23,MEDIA,En observacion,0.42584451875326745,val
+299,User_299,user299@example.com,6222.12,53.35,MEDIA,En observacion,0.37923866049349375,train
+300,User_300,user300@example.com,3496.47,69.48,MEDIA,En observacion,0.518959259478017,train
+301,User_301,user301@example.com,5660.04,9.77,BAJA,Saludable,0.2599093000002926,train
+302,User_302,user302@example.com,4848.06,28.7,ALTA,Saludable,0.17415964455697464,train
+303,User_303,user303@example.com,3332.81,19.91,BAJA,En observacion,0.38455921460859066,train
+304,User_304,user304@example.com,2855.72,34.48,ALTA,Saludable,0.26332598662682605,train
+305,User_305,user305@example.com,3436.75,18.94,NINGUNA,En riesgo,0.6049220993228575,train
+306,User_306,user306@example.com,6341.97,49.76,BAJA,En observacion,0.5043086202887245,train
+307,User_307,user307@example.com,6282.96,69.65,BAJA,En observacion,0.5724246543226668,train
+308,User_308,user308@example.com,2538.29,37.5,MEDIA,En observacion,0.4357796257004074,train
+309,User_309,user309@example.com,4257.68,11.45,MEDIA,Saludable,0.2653916482036784,train
+310,User_310,user310@example.com,2587.01,25.65,MEDIA,Saludable,0.32914470654198724,train
+311,User_311,user311@example.com,5069.54,27.56,ALTA,Saludable,0.17056038021873532,train
+312,User_312,user312@example.com,6590.03,56.31,MEDIA,En observacion,0.3912946228125262,train
+313,User_313,user313@example.com,4645.77,40.15,BAJA,En observacion,0.4847391799488867,train
+314,User_314,user314@example.com,2814.98,38.04,BAJA,En observacion,0.4526119192501384,train
+315,User_315,user315@example.com,4197.09,22.4,ALTA,Saludable,0.18033945387185701,train
+316,User_316,user316@example.com,5687.81,25.81,MEDIA,Saludable,0.2801134845032007,test
+317,User_317,user317@example.com,5773.28,43.15,BAJA,En observacion,0.5501064826952735,train
+318,User_318,user318@example.com,4030.56,32.35,MEDIA,Saludable,0.32008713777307735,train
+319,User_319,user319@example.com,3396.52,48.26,NINGUNA,En riesgo,0.6559510604297336,val
+320,User_320,user320@example.com,3824.33,27.24,BAJA,En observacion,0.47206321008194496,train
+321,User_321,user321@example.com,5503.09,5.0,NINGUNA,En observacion,0.42580590039282445,train
+322,User_322,user322@example.com,4194.93,27.66,BAJA,En observacion,0.5080231063534536,train
+323,User_323,user323@example.com,4562.46,10.41,ALTA,Saludable,0.13442630263237704,train
+324,User_324,user324@example.com,5696.47,43.86,NINGUNA,En riesgo,0.6959963665291453,train
+325,User_325,user325@example.com,5498.9,41.08,ALTA,Saludable,0.267505975690057,train
+326,User_326,user326@example.com,5410.01,51.0,MEDIA,En observacion,0.4765270920222836,train
+327,User_327,user327@example.com,4302.94,25.26,NINGUNA,En riesgo,0.6070179803705374,train
+328,User_328,user328@example.com,5713.2,32.49,ALTA,Saludable,0.19641818432166616,train
+329,User_329,user329@example.com,3262.17,24.66,NINGUNA,En riesgo,0.6245520883780763,train
+330,User_330,user330@example.com,5291.27,35.43,NINGUNA,En riesgo,0.674146280630365,train
+331,User_331,user331@example.com,1139.88,47.27,NINGUNA,En riesgo,0.6668725970175347,train
+332,User_332,user332@example.com,6789.92,14.6,MEDIA,Saludable,0.26570167830136104,train
+333,User_333,user333@example.com,4368.12,57.43,BAJA,En observacion,0.5972142712214255,train
+334,User_334,user334@example.com,2191.14,38.74,ALTA,En observacion,0.36211878898817373,train
+335,User_335,user335@example.com,6504.1,53.13,BAJA,En observacion,0.45505841259681923,val
+336,User_336,user336@example.com,6150.32,28.3,ALTA,Saludable,0.1717359996449154,train
+337,User_337,user337@example.com,3133.33,29.56,ALTA,Saludable,0.23300202596839137,train
+338,User_338,user338@example.com,4153.68,52.93,ALTA,Saludable,0.23414415476081127,train
+339,User_339,user339@example.com,1709.66,40.51,NINGUNA,En riesgo,0.6739486056343522,train
+340,User_340,user340@example.com,1466.92,58.48,NINGUNA,En riesgo,0.7823677369463506,test
+341,User_341,user341@example.com,4586.64,9.49,BAJA,En observacion,0.34638085616518693,train
+342,User_342,user342@example.com,7222.4,13.28,MEDIA,Saludable,0.1043997021689959,train
+343,User_343,user343@example.com,2520.45,44.73,BAJA,En riesgo,0.6133920074628313,train
+344,User_344,user344@example.com,2798.43,38.66,NINGUNA,En riesgo,0.6432955059631635,train
+345,User_345,user345@example.com,4457.12,31.66,ALTA,Saludable,0.15155106856332803,train
+346,User_346,user346@example.com,6270.73,62.7,ALTA,Saludable,0.2610695741836924,train
+347,User_347,user347@example.com,3481.88,48.47,BAJA,En observacion,0.5525013915784335,train
+348,User_348,user348@example.com,2839.58,16.23,MEDIA,En observacion,0.38198110520366296,val
+349,User_349,user349@example.com,5593.38,42.58,ALTA,Saludable,0.23528788079125645,train
+350,User_350,user350@example.com,2631.98,40.14,BAJA,En observacion,0.5641180359576892,test
+351,User_351,user351@example.com,5022.24,41.9,BAJA,En observacion,0.5347587163574753,train
+352,User_352,user352@example.com,4334.99,37.95,BAJA,En observacion,0.5349441253794257,train
+353,User_353,user353@example.com,5164.88,19.54,MEDIA,Saludable,0.2786001745175457,val
+354,User_354,user354@example.com,2304.86,24.85,NINGUNA,En riesgo,0.7086558966455407,train
+355,User_355,user355@example.com,2704.6,23.89,MEDIA,En observacion,0.3460792984305015,train
+356,User_356,user356@example.com,4152.89,47.61,MEDIA,En observacion,0.3937471135348804,train
+357,User_357,user357@example.com,3169.48,30.85,ALTA,Saludable,0.22812779768077565,train
+358,User_358,user358@example.com,1944.8,28.22,ALTA,Saludable,0.11933103366855217,test
+359,User_359,user359@example.com,4225.94,50.35,ALTA,Saludable,0.24265717769683026,train
+360,User_360,user360@example.com,5563.84,20.5,NINGUNA,En observacion,0.5355424321929011,test
+361,User_361,user361@example.com,2892.51,71.03,MEDIA,En observacion,0.554270283027759,train
+362,User_362,user362@example.com,4676.18,31.69,NINGUNA,En riesgo,0.6062709169497266,train
+363,User_363,user363@example.com,3230.16,21.86,NINGUNA,En observacion,0.589687511658397,test
+364,User_364,user364@example.com,3318.5,19.98,MEDIA,Saludable,0.30363311035570223,train
+365,User_365,user365@example.com,4095.61,49.83,BAJA,En observacion,0.5886078028327302,train
+366,User_366,user366@example.com,2702.82,55.99,ALTA,En observacion,0.39750880914563846,test
+367,User_367,user367@example.com,1555.91,62.18,BAJA,En riesgo,0.6785329739345884,test
+368,User_368,user368@example.com,5640.42,48.43,ALTA,Saludable,0.2939357150840985,train
+369,User_369,user369@example.com,3278.03,36.72,ALTA,Saludable,0.3012842110499416,test
+370,User_370,user370@example.com,5287.21,66.13,ALTA,Saludable,0.3139904215955216,train
+371,User_371,user371@example.com,3937.36,29.46,MEDIA,En observacion,0.3589719698045372,train
+372,User_372,user372@example.com,1844.88,25.23,NINGUNA,En riesgo,0.6047492082972841,test
+373,User_373,user373@example.com,5646.3,19.53,MEDIA,Saludable,0.245551963122689,train
+374,User_374,user374@example.com,5125.96,34.63,ALTA,Saludable,0.31683676793059323,train
+375,User_375,user375@example.com,4048.01,21.0,ALTA,Saludable,0.20626610051886207,val
+376,User_376,user376@example.com,7186.55,35.57,NINGUNA,En observacion,0.5813187538359131,train
+377,User_377,user377@example.com,2699.93,27.47,MEDIA,En observacion,0.37357106101901966,train
+378,User_378,user378@example.com,1544.65,31.14,NINGUNA,En observacion,0.5777386088061205,test
+379,User_379,user379@example.com,5621.09,48.99,ALTA,Saludable,0.3087174899309575,test
+380,User_380,user380@example.com,3576.13,16.61,NINGUNA,En observacion,0.484473818489509,train
+381,User_381,user381@example.com,6924.68,11.57,ALTA,Saludable,0.17231410512650677,train
+382,User_382,user382@example.com,4786.5,51.18,BAJA,En observacion,0.5486377015249647,train
+383,User_383,user383@example.com,5868.68,10.51,ALTA,Saludable,0.0586188287725737,train
+384,User_384,user384@example.com,4194.7,57.15,NINGUNA,En riesgo,0.7975289427073727,train
+385,User_385,user385@example.com,4825.57,41.02,BAJA,En observacion,0.4698300484459097,test
+386,User_386,user386@example.com,5938.61,26.75,ALTA,Saludable,0.12544489410309742,test
+387,User_387,user387@example.com,6624.44,39.86,ALTA,Saludable,0.19058725105032548,train
+388,User_388,user388@example.com,3811.24,43.15,BAJA,En observacion,0.5141835333956947,val
+389,User_389,user389@example.com,3644.38,5.0,MEDIA,Saludable,0.255927866442735,train
+390,User_390,user390@example.com,4197.14,29.56,ALTA,Saludable,0.1483401302686928,train
+391,User_391,user391@example.com,6594.6,47.11,NINGUNA,En observacion,0.576057947045015,train
+392,User_392,user392@example.com,3225.43,27.98,NINGUNA,En riesgo,0.6327583815865357,train
+393,User_393,user393@example.com,6600.67,11.66,BAJA,Saludable,0.3250876389750096,train
+394,User_394,user394@example.com,1953.06,36.15,MEDIA,En observacion,0.3519055137905715,train
+395,User_395,user395@example.com,3269.09,31.11,MEDIA,En observacion,0.43038390856880177,train
+396,User_396,user396@example.com,2921.14,57.51,ALTA,En observacion,0.39653471210567465,test
+397,User_397,user397@example.com,2538.33,47.71,BAJA,En riesgo,0.6382263582443441,train
+398,User_398,user398@example.com,3747.68,40.73,BAJA,En observacion,0.5445180823595536,train
+399,User_399,user399@example.com,4166.46,30.45,BAJA,En observacion,0.4878901843470062,test
+400,User_400,user400@example.com,2222.89,33.93,MEDIA,En observacion,0.3991447006745079,val
+401,User_401,user401@example.com,3955.33,33.04,ALTA,Saludable,0.17276981927339335,train
+402,User_402,user402@example.com,6168.78,36.18,MEDIA,Saludable,0.23723534077339464,val
+403,User_403,user403@example.com,1667.21,37.09,MEDIA,En observacion,0.4482715570910667,val
+404,User_404,user404@example.com,5618.57,49.97,ALTA,Saludable,0.1247040435903155,test
+405,User_405,user405@example.com,3798.8,21.93,ALTA,Saludable,0.19762700116770388,train
+406,User_406,user406@example.com,1536.36,51.62,MEDIA,En observacion,0.44148795364372345,train
+407,User_407,user407@example.com,2710.9,39.15,ALTA,Saludable,0.2428099481327455,train
+408,User_408,user408@example.com,3638.98,32.14,MEDIA,En observacion,0.3772707686589861,test
+409,User_409,user409@example.com,4629.87,34.54,BAJA,En observacion,0.5787903008591052,train
+410,User_410,user410@example.com,4299.74,38.02,BAJA,En observacion,0.5530025948003807,test
+411,User_411,user411@example.com,1541.42,37.96,ALTA,Saludable,0.3143797967459872,train
+412,User_412,user412@example.com,4555.61,44.58,ALTA,Saludable,0.2080420668634758,val
+413,User_413,user413@example.com,3469.27,23.43,ALTA,Saludable,0.20521760348380877,train
+414,User_414,user414@example.com,4471.84,34.04,BAJA,En observacion,0.495771120515174,train
+415,User_415,user415@example.com,5638.87,40.11,NINGUNA,En riesgo,0.6965252649595026,train
+416,User_416,user416@example.com,4852.44,31.34,MEDIA,En observacion,0.3882511084144179,test
+417,User_417,user417@example.com,3232.29,50.7,ALTA,En observacion,0.34604207776706913,train
+418,User_418,user418@example.com,4975.96,30.54,ALTA,Saludable,0.26291609066558097,train
+419,User_419,user419@example.com,5290.47,36.81,BAJA,En observacion,0.42501497084354584,train
+420,User_420,user420@example.com,1122.76,18.56,BAJA,En observacion,0.4004657058702853,train
+421,User_421,user421@example.com,3477.08,21.72,MEDIA,En observacion,0.4001728407744821,train
+422,User_422,user422@example.com,3656.17,25.42,ALTA,Saludable,0.1296823228296251,train
+423,User_423,user423@example.com,2827.64,37.55,MEDIA,En observacion,0.37095095633974956,test
+424,User_424,user424@example.com,4518.07,24.68,ALTA,Saludable,0.2889679777672154,test
+425,User_425,user425@example.com,3421.13,35.89,ALTA,Saludable,0.30366466380076906,test
+426,User_426,user426@example.com,3763.97,14.16,NINGUNA,En observacion,0.4608756251521554,train
+427,User_427,user427@example.com,4145.69,69.93,BAJA,En riesgo,0.6832108824690872,train
+428,User_428,user428@example.com,4989.8,43.92,MEDIA,En observacion,0.43675202793901535,test
+429,User_429,user429@example.com,6408.23,31.21,NINGUNA,En observacion,0.5898949139850436,train
+430,User_430,user430@example.com,6101.62,23.69,NINGUNA,En observacion,0.5281658711566612,val
+431,User_431,user431@example.com,3788.04,21.94,NINGUNA,En observacion,0.5284906312353749,train
+432,User_432,user432@example.com,3157.73,37.7,MEDIA,En observacion,0.47004267681722994,test
+433,User_433,user433@example.com,3173.09,57.72,NINGUNA,En riesgo,0.7888987219588763,train
+434,User_434,user434@example.com,3020.76,20.26,NINGUNA,En observacion,0.5732990925001488,train
+435,User_435,user435@example.com,2610.25,20.46,MEDIA,En observacion,0.3606796776121269,train
+436,User_436,user436@example.com,3932.7,25.98,BAJA,En observacion,0.46916097170712684,train
+437,User_437,user437@example.com,4094.71,55.96,BAJA,En observacion,0.5812869791594991,train
+438,User_438,user438@example.com,4028.12,36.88,NINGUNA,En riesgo,0.6189624729437373,train
+439,User_439,user439@example.com,6358.78,53.09,ALTA,Saludable,0.2888764526273432,train
+440,User_440,user440@example.com,5738.39,24.47,BAJA,En observacion,0.3793751416224526,train
+441,User_441,user441@example.com,4271.11,52.24,BAJA,En observacion,0.549951486531932,train
+442,User_442,user442@example.com,5863.12,16.34,MEDIA,Saludable,0.21895124011020464,train
+443,User_443,user443@example.com,5074.73,47.04,NINGUNA,En riesgo,0.6385064049255238,test
+444,User_444,user444@example.com,3570.14,24.9,ALTA,Saludable,0.20905958311119008,test
+445,User_445,user445@example.com,4325.01,68.34,BAJA,En observacion,0.5745450152956443,train
+446,User_446,user446@example.com,2543.38,44.51,MEDIA,En observacion,0.46329657987257494,test
+447,User_447,user447@example.com,2780.11,53.37,MEDIA,En observacion,0.5592077656149522,train
+448,User_448,user448@example.com,4014.53,26.64,ALTA,Saludable,0.1261174135210461,train
+449,User_449,user449@example.com,4203.33,39.72,ALTA,Saludable,0.24982337262899082,val
+450,User_450,user450@example.com,2371.05,22.94,BAJA,En observacion,0.5507286527722034,test
+451,User_451,user451@example.com,3585.38,49.65,ALTA,En observacion,0.3614015818241677,train
+452,User_452,user452@example.com,7015.91,43.53,ALTA,Saludable,0.29575651865642694,train
+453,User_453,user453@example.com,3027.01,18.49,MEDIA,Saludable,0.2808836312619731,test
+454,User_454,user454@example.com,3334.14,35.51,MEDIA,En observacion,0.3487812134470679,train
+455,User_455,user455@example.com,1905.94,25.67,ALTA,Saludable,0.26484727824196114,train
+456,User_456,user456@example.com,3988.92,39.96,NINGUNA,En riesgo,0.6967041980804463,test
+457,User_457,user457@example.com,3962.1,17.41,ALTA,Saludable,0.09238221993599471,val
+458,User_458,user458@example.com,4523.8,60.09,MEDIA,En observacion,0.4965347004683023,val
+459,User_459,user459@example.com,3714.17,36.45,BAJA,En observacion,0.47033994839804594,train
+460,User_460,user460@example.com,6434.33,43.08,MEDIA,Saludable,0.3171826328460316,train
+461,User_461,user461@example.com,2706.54,21.28,BAJA,En observacion,0.4590762171383514,train
+462,User_462,user462@example.com,3662.02,23.97,BAJA,En observacion,0.5110067837605219,train
+463,User_463,user463@example.com,4503.27,26.99,NINGUNA,En observacion,0.5166614861892541,train
+464,User_464,user464@example.com,2460.48,53.2,ALTA,En observacion,0.35035184568199523,train
+465,User_465,user465@example.com,3916.94,23.76,MEDIA,En observacion,0.3347445126844533,val
+466,User_466,user466@example.com,4938.99,37.0,NINGUNA,En riesgo,0.6162704456809728,test
+467,User_467,user467@example.com,5083.05,18.94,MEDIA,Saludable,0.23543550741067157,val
+468,User_468,user468@example.com,3352.42,7.46,BAJA,En observacion,0.40611169134562713,train
+469,User_469,user469@example.com,3479.81,67.34,MEDIA,En observacion,0.47121091146737853,train
+470,User_470,user470@example.com,3897.25,34.91,MEDIA,En observacion,0.41594610122258213,val
+471,User_471,user471@example.com,7041.56,29.23,MEDIA,Saludable,0.3127043641461729,test
+472,User_472,user472@example.com,6136.16,36.23,ALTA,Saludable,0.19303751734044286,test
+473,User_473,user473@example.com,3424.02,43.53,MEDIA,En observacion,0.4516643306640747,val
+474,User_474,user474@example.com,3147.69,32.38,MEDIA,En observacion,0.3389035545253578,val
+475,User_475,user475@example.com,2571.74,19.45,ALTA,Saludable,0.2549583007794357,test
+476,User_476,user476@example.com,6691.52,51.29,BAJA,En observacion,0.5390739116439976,val
+477,User_477,user477@example.com,2348.34,71.97,BAJA,En riesgo,0.6748266107803755,test
+478,User_478,user478@example.com,4989.4,35.16,ALTA,Saludable,0.14907693838249203,test
+479,User_479,user479@example.com,3485.48,29.42,MEDIA,Saludable,0.3074215866981953,train
+480,User_480,user480@example.com,1910.51,35.85,ALTA,Saludable,0.30198757521783653,train
+481,User_481,user481@example.com,6542.94,7.96,NINGUNA,En observacion,0.4308133989403782,train
+482,User_482,user482@example.com,3861.95,20.91,MEDIA,Saludable,0.3044790597139192,train
+483,User_483,user483@example.com,4397.44,43.1,MEDIA,En observacion,0.3373730689439238,train
+484,User_484,user484@example.com,4438.2,31.8,BAJA,En observacion,0.5444200568424976,train
+485,User_485,user485@example.com,1825.76,26.55,MEDIA,En observacion,0.3546954421850408,test
+486,User_486,user486@example.com,2281.84,25.8,BAJA,En observacion,0.46819201567559354,train
+487,User_487,user487@example.com,4627.71,35.24,ALTA,Saludable,0.18537385343127985,test
+488,User_488,user488@example.com,7202.47,41.55,MEDIA,En observacion,0.40146100123931705,train
+489,User_489,user489@example.com,3153.75,42.49,NINGUNA,En riesgo,0.7965062909398836,train
+490,User_490,user490@example.com,3578.14,14.5,NINGUNA,En observacion,0.5369216049053659,train
+491,User_491,user491@example.com,3379.3,53.12,ALTA,Saludable,0.30984562353693856,train
+492,User_492,user492@example.com,4828.08,26.35,BAJA,Saludable,0.3084963853927545,test
+493,User_493,user493@example.com,1389.23,47.95,BAJA,En observacion,0.5599049284470211,train
+494,User_494,user494@example.com,2374.9,12.82,MEDIA,Saludable,0.31232862098895775,train
+495,User_495,user495@example.com,1268.26,20.09,ALTA,Saludable,0.21507817514221877,train
+496,User_496,user496@example.com,4019.38,52.95,BAJA,En observacion,0.5649851463486515,test
+497,User_497,user497@example.com,2132.03,17.1,NINGUNA,En observacion,0.5849700118671723,val
+498,User_498,user498@example.com,3223.51,32.41,ALTA,Saludable,0.32098961150711713,test
+499,User_499,user499@example.com,3407.65,21.88,MEDIA,Saludable,0.21074788707039988,train
+500,User_500,user500@example.com,5099.68,24.96,MEDIA,En observacion,0.3586962343698038,train
+501,User_501,user501@example.com,4608.98,11.01,ALTA,Saludable,0.09279047084767081,test
+502,User_502,user502@example.com,5434.9,67.36,MEDIA,En observacion,0.460929878849833,train
+503,User_503,user503@example.com,4478.52,39.15,MEDIA,En observacion,0.4221777126752074,train
+504,User_504,user504@example.com,4283.39,35.48,MEDIA,En observacion,0.3316755439826907,train
+505,User_505,user505@example.com,2448.2,36.33,MEDIA,En observacion,0.4936876802842485,train
+506,User_506,user506@example.com,4572.56,29.52,NINGUNA,En riesgo,0.6063385152932453,test
+507,User_507,user507@example.com,1935.36,22.96,ALTA,Saludable,0.2819725662423526,train
+508,User_508,user508@example.com,3116.1,53.01,BAJA,En observacion,0.5572734110514302,train
+509,User_509,user509@example.com,4487.48,28.23,NINGUNA,En observacion,0.5710920756175061,train
+510,User_510,user510@example.com,2134.16,52.79,MEDIA,En observacion,0.5234871655332533,train
+511,User_511,user511@example.com,2989.68,44.11,BAJA,En riesgo,0.6179964443159052,val
+512,User_512,user512@example.com,3428.55,30.16,BAJA,En observacion,0.46889303667724763,train
+513,User_513,user513@example.com,4287.89,44.63,BAJA,En observacion,0.5916684168613165,train
+514,User_514,user514@example.com,3952.06,25.35,BAJA,En observacion,0.49636588140406196,train
+515,User_515,user515@example.com,6767.34,56.83,BAJA,En riesgo,0.62881095375095,val
+516,User_516,user516@example.com,4901.61,43.07,NINGUNA,En riesgo,0.7055351793654902,train
+517,User_517,user517@example.com,2322.25,43.35,BAJA,En observacion,0.5510143045719477,test
+518,User_518,user518@example.com,2815.76,19.33,MEDIA,Saludable,0.22587167053119994,val
+519,User_519,user519@example.com,3623.93,43.69,NINGUNA,En riesgo,0.6860412787613389,train
+520,User_520,user520@example.com,2886.66,31.68,NINGUNA,En riesgo,0.624594460005554,train
+521,User_521,user521@example.com,5759.19,14.89,MEDIA,Saludable,0.29467019851371495,val
+522,User_522,user522@example.com,5279.05,32.49,BAJA,En observacion,0.471351810024415,train
+523,User_523,user523@example.com,4937.8,53.21,NINGUNA,En riesgo,0.6898591074028881,train
+524,User_524,user524@example.com,4802.51,44.94,NINGUNA,En riesgo,0.7208566303742663,train
+525,User_525,user525@example.com,2591.56,39.89,ALTA,Saludable,0.2824288328747171,train
+526,User_526,user526@example.com,6204.62,41.0,NINGUNA,En observacion,0.5855955303104086,train
+527,User_527,user527@example.com,5290.17,35.46,MEDIA,Saludable,0.2757825051764312,train
+528,User_528,user528@example.com,5433.81,39.63,NINGUNA,En riesgo,0.711561809731762,train
+529,User_529,user529@example.com,4186.59,6.51,BAJA,En observacion,0.36471790745093213,test
+530,User_530,user530@example.com,4085.7,46.3,NINGUNA,En riesgo,0.7008010442441388,val
+531,User_531,user531@example.com,4377.92,25.66,MEDIA,En observacion,0.3472884998313727,train
+532,User_532,user532@example.com,3701.28,31.86,NINGUNA,En observacion,0.581444977289535,train
+533,User_533,user533@example.com,5185.24,38.91,ALTA,Saludable,0.15784635198625283,val
+534,User_534,user534@example.com,4825.36,17.06,ALTA,Saludable,0.15852463341100703,train
+535,User_535,user535@example.com,3335.53,39.17,ALTA,En observacion,0.33646434474958714,val
+536,User_536,user536@example.com,1107.58,23.23,ALTA,Saludable,0.26618189669219294,train
+537,User_537,user537@example.com,6439.99,13.25,NINGUNA,En observacion,0.43355977843858295,train
+538,User_538,user538@example.com,2441.15,45.84,BAJA,En observacion,0.5518667798954117,train
+539,User_539,user539@example.com,7186.57,22.74,MEDIA,Saludable,0.15287578111681116,train
+540,User_540,user540@example.com,4770.81,38.37,MEDIA,En observacion,0.4198418540936545,train
+541,User_541,user541@example.com,3461.33,60.22,MEDIA,En observacion,0.45854478501099427,train
+542,User_542,user542@example.com,1041.28,12.12,ALTA,Saludable,0.24814520517135907,train
+543,User_543,user543@example.com,5151.49,37.72,NINGUNA,En observacion,0.5813614557489545,test
+544,User_544,user544@example.com,3770.4,26.54,BAJA,En observacion,0.46796256515985185,train
+545,User_545,user545@example.com,4144.94,62.92,BAJA,En riesgo,0.7097531073044705,train
+546,User_546,user546@example.com,4240.16,50.36,ALTA,Saludable,0.3267433474600592,train
+547,User_547,user547@example.com,3009.31,34.89,NINGUNA,En riesgo,0.7162008685871315,train
+548,User_548,user548@example.com,1980.67,32.45,MEDIA,En observacion,0.3762260350336362,train
+549,User_549,user549@example.com,5099.01,49.22,MEDIA,En observacion,0.4499852850021963,test
+550,User_550,user550@example.com,3903.17,17.87,ALTA,Saludable,0.1475475895360141,train
+551,User_551,user551@example.com,3236.6,22.35,NINGUNA,En observacion,0.5831266052183984,train
+552,User_552,user552@example.com,2797.72,57.7,NINGUNA,En riesgo,0.788733334227739,val
+553,User_553,user553@example.com,7289.56,37.85,MEDIA,En observacion,0.35248365330965353,val
+554,User_554,user554@example.com,3561.66,53.32,NINGUNA,En riesgo,0.7522637601734309,train
+555,User_555,user555@example.com,2263.11,52.21,MEDIA,En observacion,0.4673004934414093,train
+556,User_556,user556@example.com,3435.06,63.27,ALTA,En observacion,0.4474698014136095,train
+557,User_557,user557@example.com,2626.79,13.84,ALTA,Saludable,0.10430416116166417,test
+558,User_558,user558@example.com,1488.4,37.11,NINGUNA,En riesgo,0.6006655317218574,test
+559,User_559,user559@example.com,3124.64,50.49,MEDIA,En observacion,0.4488707395785521,train
+560,User_560,user560@example.com,5441.8,42.7,BAJA,En observacion,0.47348120801690446,train
+561,User_561,user561@example.com,3689.41,18.33,ALTA,Saludable,0.16072635474174576,train
+562,User_562,user562@example.com,2007.51,34.59,NINGUNA,En riesgo,0.7566267673334872,train
+563,User_563,user563@example.com,3615.11,48.5,MEDIA,En observacion,0.4793721468063008,train
+564,User_564,user564@example.com,2495.48,20.02,MEDIA,En observacion,0.3483893449909733,train
+565,User_565,user565@example.com,4918.69,40.3,ALTA,Saludable,0.24519981307008576,val
+566,User_566,user566@example.com,1916.89,33.5,NINGUNA,En riesgo,0.6546246249911518,train
+567,User_567,user567@example.com,2975.83,40.33,MEDIA,En observacion,0.4046325327355749,train
+568,User_568,user568@example.com,2924.69,48.7,MEDIA,En observacion,0.4141531149659827,val
+569,User_569,user569@example.com,3659.82,27.11,MEDIA,En observacion,0.3426723980871205,test
+570,User_570,user570@example.com,1864.61,5.0,MEDIA,Saludable,0.32174083231805245,train
+571,User_571,user571@example.com,3306.68,38.71,BAJA,En observacion,0.5265613028957705,train
+572,User_572,user572@example.com,4066.71,11.56,ALTA,Saludable,0.09931655363268528,train
+573,User_573,user573@example.com,4814.11,18.34,NINGUNA,En observacion,0.5706182133694051,train
+574,User_574,user574@example.com,4086.92,42.0,BAJA,En observacion,0.5205881758851258,train
+575,User_575,user575@example.com,4260.95,22.87,ALTA,Saludable,0.15725894528792267,train
+576,User_576,user576@example.com,2454.1,23.98,MEDIA,Saludable,0.3113830031492809,train
+577,User_577,user577@example.com,5499.13,50.26,MEDIA,En observacion,0.5462204300059912,val
+578,User_578,user578@example.com,2240.89,41.43,NINGUNA,En riesgo,0.7290735928631573,test
+579,User_579,user579@example.com,1906.4,40.69,BAJA,En riesgo,0.6479352406296758,train
+580,User_580,user580@example.com,2015.9,18.92,NINGUNA,En observacion,0.4512743508252697,train
+581,User_581,user581@example.com,2531.72,28.27,MEDIA,En observacion,0.4702457144650001,train
+582,User_582,user582@example.com,3529.52,44.29,ALTA,En observacion,0.38600127348558494,train
+583,User_583,user583@example.com,1861.38,55.96,ALTA,En observacion,0.3697697818185525,train
+584,User_584,user584@example.com,3693.12,25.31,BAJA,En observacion,0.4146893996674873,val
+585,User_585,user585@example.com,2526.13,52.43,NINGUNA,En riesgo,0.7001518151342964,train
+586,User_586,user586@example.com,3911.06,39.85,NINGUNA,En riesgo,0.6433749498936857,train
+587,User_587,user587@example.com,5703.56,29.59,ALTA,Saludable,0.20178402504649767,train
+588,User_588,user588@example.com,3665.06,48.25,MEDIA,En observacion,0.43451326514935984,train
+589,User_589,user589@example.com,3983.92,20.4,ALTA,Saludable,0.1668316311819233,test
+590,User_590,user590@example.com,4467.13,28.6,NINGUNA,En riesgo,0.6523635979598378,train
+591,User_591,user591@example.com,5047.74,7.54,MEDIA,Saludable,0.23931746519778432,test
+592,User_592,user592@example.com,5143.84,63.1,BAJA,En riesgo,0.6515054032857325,val
+593,User_593,user593@example.com,5172.79,46.48,MEDIA,En observacion,0.39257911458966804,train
+594,User_594,user594@example.com,3962.37,42.27,NINGUNA,En riesgo,0.6236027297504564,train
+595,User_595,user595@example.com,5146.15,47.51,ALTA,Saludable,0.24591690314766237,train
+596,User_596,user596@example.com,5914.01,29.98,ALTA,Saludable,0.15383988933790016,train
+597,User_597,user597@example.com,2625.55,39.47,BAJA,En observacion,0.5764311746578453,train
+598,User_598,user598@example.com,2458.78,65.94,MEDIA,En observacion,0.4872512292872863,train
+599,User_599,user599@example.com,2028.77,37.87,NINGUNA,En riesgo,0.6944374693827674,train
+600,User_600,user600@example.com,3858.51,33.81,ALTA,Saludable,0.2524165273124867,test
+601,User_601,user601@example.com,6847.43,52.23,MEDIA,En observacion,0.4682627890608751,train
+602,User_602,user602@example.com,2532.66,32.19,ALTA,Saludable,0.2966541247839931,val
+603,User_603,user603@example.com,2513.13,35.49,ALTA,Saludable,0.24923807689928396,train
+604,User_604,user604@example.com,3941.11,43.69,ALTA,Saludable,0.2889990033291083,train
+605,User_605,user605@example.com,1998.53,22.92,MEDIA,En observacion,0.38548967947803353,train
+606,User_606,user606@example.com,5550.42,37.53,ALTA,Saludable,0.280694501780398,val
+607,User_607,user607@example.com,4713.34,30.45,MEDIA,Saludable,0.2408860536844949,train
+608,User_608,user608@example.com,5313.65,5.0,NINGUNA,En observacion,0.44247796314527843,train
+609,User_609,user609@example.com,3818.27,27.52,ALTA,Saludable,0.25188186444563965,train
+610,User_610,user610@example.com,2572.95,47.61,ALTA,En observacion,0.34333886591006896,test
+611,User_611,user611@example.com,2149.27,26.52,MEDIA,En observacion,0.3485057545448792,train
+612,User_612,user612@example.com,3308.84,59.23,BAJA,En observacion,0.5983782265394331,train
+613,User_613,user613@example.com,4442.35,12.22,NINGUNA,En observacion,0.5838885841293158,train
+614,User_614,user614@example.com,5438.64,41.06,BAJA,En observacion,0.49158571968045417,test
+615,User_615,user615@example.com,4368.71,40.59,MEDIA,En observacion,0.35123837124323615,train
+616,User_616,user616@example.com,3225.1,28.03,BAJA,En observacion,0.485722357793642,train
+617,User_617,user617@example.com,2578.65,28.97,BAJA,En observacion,0.5182285463821584,train
+618,User_618,user618@example.com,5410.19,48.07,BAJA,En observacion,0.4575749534876627,train
+619,User_619,user619@example.com,4637.0,5.96,NINGUNA,En observacion,0.4961685984809679,train
+620,User_620,user620@example.com,2761.31,42.71,ALTA,Saludable,0.29939952659697994,train
+621,User_621,user621@example.com,5642.12,45.85,ALTA,Saludable,0.2839082890819656,train
+622,User_622,user622@example.com,4503.6,41.15,MEDIA,En observacion,0.37866961726907283,test
+623,User_623,user623@example.com,4529.42,20.51,MEDIA,Saludable,0.3048751808185692,train
+624,User_624,user624@example.com,3650.47,51.61,NINGUNA,En riesgo,0.7077796293023202,train
+625,User_625,user625@example.com,4014.34,38.79,MEDIA,En observacion,0.3861138218027927,val
+626,User_626,user626@example.com,2215.25,26.97,NINGUNA,En riesgo,0.625302398384792,train
+627,User_627,user627@example.com,4859.82,31.67,NINGUNA,En riesgo,0.6224775984132224,train
+628,User_628,user628@example.com,5551.55,42.7,ALTA,Saludable,0.22508110362080416,train
+629,User_629,user629@example.com,4932.16,48.33,MEDIA,En observacion,0.3886692283672505,val
+630,User_630,user630@example.com,3056.71,40.51,NINGUNA,En riesgo,0.7668908713397561,train
+631,User_631,user631@example.com,2121.48,6.72,NINGUNA,En observacion,0.5256488778245559,train
+632,User_632,user632@example.com,4219.14,19.19,ALTA,Saludable,0.10385597892104036,train
+633,User_633,user633@example.com,4876.56,41.42,NINGUNA,En riesgo,0.6899112856843745,train
+634,User_634,user634@example.com,4198.23,33.43,BAJA,En observacion,0.4732771013404995,train
+635,User_635,user635@example.com,5153.66,36.25,ALTA,Saludable,0.1931387046604612,train
+636,User_636,user636@example.com,7150.32,36.05,NINGUNA,En riesgo,0.6362504151304095,train
+637,User_637,user637@example.com,1872.97,40.21,MEDIA,En observacion,0.49400225089774935,test
+638,User_638,user638@example.com,2241.92,49.63,NINGUNA,En riesgo,0.7563537084969922,train
+639,User_639,user639@example.com,5699.07,44.8,BAJA,En riesgo,0.639119155784848,train
+640,User_640,user640@example.com,3593.01,25.19,ALTA,Saludable,0.10445441765717715,test
+641,User_641,user641@example.com,5038.29,48.29,BAJA,En observacion,0.5443375386881418,train
+642,User_642,user642@example.com,3637.69,59.18,MEDIA,En observacion,0.5538490351792023,train
+643,User_643,user643@example.com,4192.05,19.78,MEDIA,En observacion,0.3395525746790673,train
+644,User_644,user644@example.com,3884.94,31.31,NINGUNA,En observacion,0.5758900452341904,val
+645,User_645,user645@example.com,3794.53,41.36,MEDIA,En observacion,0.4121395208803115,train
+646,User_646,user646@example.com,4228.52,35.65,NINGUNA,En riesgo,0.7158928020215376,train
+647,User_647,user647@example.com,4368.54,33.42,ALTA,Saludable,0.2092620424641452,train
+648,User_648,user648@example.com,3358.5,25.82,BAJA,En observacion,0.46136628514757944,train
+649,User_649,user649@example.com,2391.55,31.7,BAJA,En observacion,0.4044157011782004,test
+650,User_650,user650@example.com,2683.46,12.43,MEDIA,En observacion,0.33362292318448006,test
+651,User_651,user651@example.com,2735.07,31.93,ALTA,Saludable,0.2427458502469518,train
+652,User_652,user652@example.com,1172.35,30.36,NINGUNA,En riesgo,0.6270306172204708,train
+653,User_653,user653@example.com,5199.85,42.2,ALTA,En observacion,0.3789461741611784,train
+654,User_654,user654@example.com,3104.17,32.6,MEDIA,En observacion,0.4120638163225232,val
+655,User_655,user655@example.com,2055.19,21.71,NINGUNA,En riesgo,0.6225932588341886,train
+656,User_656,user656@example.com,3299.02,51.14,ALTA,Saludable,0.3193389574335971,train
+657,User_657,user657@example.com,3815.85,29.01,NINGUNA,En observacion,0.576352973879422,train
+658,User_658,user658@example.com,3471.68,7.95,BAJA,Saludable,0.30147420284972554,test
+659,User_659,user659@example.com,5926.46,46.58,MEDIA,En observacion,0.4650550622289734,test
+660,User_660,user660@example.com,3165.7,27.75,ALTA,Saludable,0.22285777559927747,train
+661,User_661,user661@example.com,2958.73,37.17,BAJA,En observacion,0.49105016924215406,train
+662,User_662,user662@example.com,4601.83,30.97,MEDIA,Saludable,0.2985210762292356,val
+663,User_663,user663@example.com,3682.56,21.68,NINGUNA,En observacion,0.5631679425656314,train
+664,User_664,user664@example.com,3553.84,33.03,NINGUNA,En riesgo,0.6358430941479384,train
+665,User_665,user665@example.com,2004.35,42.68,BAJA,En observacion,0.5560630258018966,train
+666,User_666,user666@example.com,4519.69,18.64,BAJA,En observacion,0.47968243148731354,train
+667,User_667,user667@example.com,4200.02,38.1,BAJA,En observacion,0.5406465550060974,val
+668,User_668,user668@example.com,5660.2,25.81,NINGUNA,En observacion,0.5780914262603052,train
+669,User_669,user669@example.com,5883.14,35.88,BAJA,En observacion,0.42391191466367373,test
+670,User_670,user670@example.com,2403.52,34.5,MEDIA,En observacion,0.389778157136373,val
+671,User_671,user671@example.com,3110.26,75.17,ALTA,En observacion,0.40566506619546644,train
+672,User_672,user672@example.com,1689.52,37.4,BAJA,En observacion,0.49523774295370204,train
+673,User_673,user673@example.com,3291.57,47.83,ALTA,En observacion,0.36788428200760703,test
+674,User_674,user674@example.com,5465.84,25.31,BAJA,En observacion,0.5101760446304756,train
+675,User_675,user675@example.com,4539.51,20.84,ALTA,Saludable,0.10393486052235355,train
+676,User_676,user676@example.com,5121.93,55.89,MEDIA,En observacion,0.43296648677005234,val
+677,User_677,user677@example.com,5318.47,7.71,ALTA,Saludable,0.05031434613817903,test
+678,User_678,user678@example.com,4153.8,54.57,BAJA,En observacion,0.4945566505982163,val
+679,User_679,user679@example.com,4691.03,20.2,BAJA,En observacion,0.48704431218078953,test
+680,User_680,user680@example.com,2537.38,18.41,NINGUNA,En observacion,0.5745230734855633,train
+681,User_681,user681@example.com,5783.78,20.53,MEDIA,Saludable,0.25243129322040814,train
+682,User_682,user682@example.com,1478.49,54.65,NINGUNA,En riesgo,0.8379875030394979,val
+683,User_683,user683@example.com,3282.24,32.74,NINGUNA,En riesgo,0.6001003071864676,train
+684,User_684,user684@example.com,3172.75,49.47,BAJA,En riesgo,0.6539050786774115,train
+685,User_685,user685@example.com,3368.17,63.37,BAJA,En riesgo,0.6089070115674301,val
+686,User_686,user686@example.com,2394.55,27.89,NINGUNA,En riesgo,0.629884573956086,test
+687,User_687,user687@example.com,3859.42,33.47,BAJA,En observacion,0.5087137943798621,val
+688,User_688,user688@example.com,1639.9,33.67,MEDIA,En observacion,0.3922663235058936,test
+689,User_689,user689@example.com,2501.43,7.94,ALTA,Saludable,0.12107882329433557,train
+690,User_690,user690@example.com,5863.61,45.45,MEDIA,En observacion,0.3678913380121995,train
+691,User_691,user691@example.com,4237.93,11.91,NINGUNA,En observacion,0.44981996100248534,train
+692,User_692,user692@example.com,3281.45,17.09,NINGUNA,En observacion,0.5725249672381855,train
+693,User_693,user693@example.com,4041.6,58.59,NINGUNA,En riesgo,0.7503976203863889,val
+694,User_694,user694@example.com,5388.56,7.98,MEDIA,Saludable,0.19774081001329888,val
+695,User_695,user695@example.com,2965.96,16.08,BAJA,En observacion,0.38349628868255037,train
+696,User_696,user696@example.com,6551.31,5.31,ALTA,Saludable,0.08845345030587669,train
+697,User_697,user697@example.com,4146.87,32.42,BAJA,En observacion,0.42272796094045995,val
+698,User_698,user698@example.com,4335.05,5.0,ALTA,Saludable,0.07691760140599446,train
+699,User_699,user699@example.com,7093.97,39.38,NINGUNA,En riesgo,0.6391713110574122,test
+700,User_700,user700@example.com,4102.84,16.56,NINGUNA,En observacion,0.5724267111618261,train
+701,User_701,user701@example.com,3473.58,34.55,BAJA,En observacion,0.47196008578906573,train
+702,User_702,user702@example.com,4000.44,38.81,ALTA,Saludable,0.2730214085882717,train
+703,User_703,user703@example.com,3963.73,29.57,MEDIA,En observacion,0.3627511319484724,train
+704,User_704,user704@example.com,5151.56,44.32,NINGUNA,En riesgo,0.6343677331978183,train
+705,User_705,user705@example.com,6275.39,33.13,ALTA,Saludable,0.12279185705736287,train
+706,User_706,user706@example.com,6786.18,51.89,ALTA,Saludable,0.2536944388205757,train
+707,User_707,user707@example.com,4180.06,13.28,ALTA,Saludable,0.0892467454992529,train
+708,User_708,user708@example.com,2717.37,26.07,NINGUNA,En riesgo,0.6850862171585409,train
+709,User_709,user709@example.com,3880.91,75.74,BAJA,En riesgo,0.6645770109221332,val
+710,User_710,user710@example.com,5601.97,34.18,MEDIA,En observacion,0.35305076624288284,train
+711,User_711,user711@example.com,5350.0,41.22,MEDIA,En observacion,0.4497734823172636,train
+712,User_712,user712@example.com,6414.67,32.04,ALTA,Saludable,0.1663412733173244,train
+713,User_713,user713@example.com,5521.66,52.49,NINGUNA,En riesgo,0.6724511260157388,train
+714,User_714,user714@example.com,5807.32,43.9,MEDIA,Saludable,0.23164331826678602,train
+715,User_715,user715@example.com,4336.57,64.36,NINGUNA,En riesgo,0.7462385919789897,train
+716,User_716,user716@example.com,4773.93,23.41,ALTA,Saludable,0.18618642685622677,train
+717,User_717,user717@example.com,3127.24,52.18,ALTA,Saludable,0.2995964031378472,test
+718,User_718,user718@example.com,3045.61,49.3,MEDIA,En observacion,0.48039908350486465,val
+719,User_719,user719@example.com,3108.61,42.73,MEDIA,En observacion,0.45978147473789444,val
+720,User_720,user720@example.com,2407.53,47.01,MEDIA,En observacion,0.49411837899067873,train
+721,User_721,user721@example.com,4474.92,43.77,NINGUNA,En riesgo,0.6855430453312925,val
+722,User_722,user722@example.com,4282.02,34.6,MEDIA,Saludable,0.3213183924386141,train
+723,User_723,user723@example.com,1985.19,10.4,MEDIA,Saludable,0.21794976735039528,train
+724,User_724,user724@example.com,1892.76,23.11,BAJA,En observacion,0.463107673518048,val
+725,User_725,user725@example.com,5233.0,35.45,ALTA,Saludable,0.24183662211783705,test
+726,User_726,user726@example.com,3127.91,35.02,ALTA,Saludable,0.20808725594659047,train
+727,User_727,user727@example.com,5153.3,32.31,BAJA,En observacion,0.46289625996615946,train
+728,User_728,user728@example.com,1948.39,10.89,ALTA,Saludable,0.12433644857168927,train
+729,User_729,user729@example.com,2850.32,48.09,BAJA,En observacion,0.5414662372640794,train
+730,User_730,user730@example.com,6122.8,47.44,BAJA,En observacion,0.49898619306135983,test
+731,User_731,user731@example.com,3211.61,11.89,MEDIA,Saludable,0.2766614785229051,test
+732,User_732,user732@example.com,4395.93,35.9,ALTA,Saludable,0.24299515939790955,test
+733,User_733,user733@example.com,3344.18,22.18,ALTA,Saludable,0.20385848126312336,train
+734,User_734,user734@example.com,5772.59,5.0,BAJA,En observacion,0.3334564147376848,train
+735,User_735,user735@example.com,4168.51,25.27,NINGUNA,En observacion,0.5950100621919526,test
+736,User_736,user736@example.com,4583.52,47.11,MEDIA,En observacion,0.3673766900147766,train
+737,User_737,user737@example.com,5319.16,38.55,MEDIA,En observacion,0.43222618889848896,train
+738,User_738,user738@example.com,3913.99,40.89,ALTA,Saludable,0.2351695062146251,val
+739,User_739,user739@example.com,3015.81,7.5,ALTA,Saludable,0.12579936922035098,train
+740,User_740,user740@example.com,2355.94,27.14,BAJA,En observacion,0.4955738686016861,train
+741,User_741,user741@example.com,4904.56,25.61,ALTA,Saludable,0.1740534490686053,train
+742,User_742,user742@example.com,3035.15,30.08,MEDIA,En observacion,0.37621047169294886,val
+743,User_743,user743@example.com,5424.98,22.12,ALTA,Saludable,0.2041010135520172,train
+744,User_744,user744@example.com,2157.66,14.81,BAJA,En observacion,0.3952259820139251,train
+745,User_745,user745@example.com,5446.88,50.41,MEDIA,En observacion,0.3815299811510144,train
+746,User_746,user746@example.com,5797.7,47.76,MEDIA,En observacion,0.3893445355800302,train
+747,User_747,user747@example.com,3412.6,34.02,MEDIA,En observacion,0.47818834032000146,train
+748,User_748,user748@example.com,3448.13,56.34,ALTA,En observacion,0.38518833261207963,train
+749,User_749,user749@example.com,1080.95,42.83,ALTA,Saludable,0.28164698819494793,train
+750,User_750,user750@example.com,4509.87,36.33,NINGUNA,En riesgo,0.6387907228702798,val
+751,User_751,user751@example.com,3122.02,38.05,MEDIA,En observacion,0.3884529732163708,train
+752,User_752,user752@example.com,4411.83,32.91,ALTA,Saludable,0.19286372425742937,train
+753,User_753,user753@example.com,6424.01,5.0,NINGUNA,En observacion,0.4528943483121242,train
+754,User_754,user754@example.com,3687.7,26.74,ALTA,Saludable,0.14015000370429204,train
+755,User_755,user755@example.com,3386.49,53.53,BAJA,En observacion,0.5713837134527805,test
+756,User_756,user756@example.com,5497.33,44.33,BAJA,En observacion,0.44946840661096166,val
+757,User_757,user757@example.com,3739.3,30.9,ALTA,Saludable,0.2371943955991505,train
+758,User_758,user758@example.com,4561.53,11.69,NINGUNA,En observacion,0.5579707954012515,train
+759,User_759,user759@example.com,2371.98,54.12,MEDIA,En observacion,0.5295684902026345,train
+760,User_760,user760@example.com,3189.5,17.16,NINGUNA,En riesgo,0.6495505226627982,train
+761,User_761,user761@example.com,4727.63,37.88,ALTA,Saludable,0.2244057936204115,test
+762,User_762,user762@example.com,3080.18,26.84,MEDIA,En observacion,0.3448869796963852,train
+763,User_763,user763@example.com,2220.3,8.84,NINGUNA,En observacion,0.5541002953026988,train
+764,User_764,user764@example.com,5400.21,31.57,MEDIA,Saludable,0.28109359376957443,train
+765,User_765,user765@example.com,3813.37,46.68,MEDIA,Saludable,0.3080649041446596,train
+766,User_766,user766@example.com,4205.99,34.71,NINGUNA,En riesgo,0.6141881460395866,train
+767,User_767,user767@example.com,6510.95,65.27,BAJA,En observacion,0.592450531578425,train
+768,User_768,user768@example.com,3175.21,45.73,ALTA,En observacion,0.33215909878539673,test
+769,User_769,user769@example.com,3918.2,31.43,NINGUNA,En riesgo,0.6275804882097615,train
+770,User_770,user770@example.com,2991.89,36.53,MEDIA,En observacion,0.4757380700747594,val
+771,User_771,user771@example.com,3309.39,49.83,BAJA,En observacion,0.5046116492554014,test
+772,User_772,user772@example.com,6668.38,37.6,MEDIA,En observacion,0.34636553489542504,train
+773,User_773,user773@example.com,5073.91,5.0,ALTA,Saludable,0.030549755879661383,train
+774,User_774,user774@example.com,3140.89,33.45,BAJA,En observacion,0.41947387194229163,test
+775,User_775,user775@example.com,4898.37,24.57,ALTA,Saludable,0.16666208865437251,train
+776,User_776,user776@example.com,6436.41,35.31,ALTA,Saludable,0.1997473577859342,test
+777,User_777,user777@example.com,6501.1,31.91,MEDIA,Saludable,0.27919854156647733,train
+778,User_778,user778@example.com,2819.19,29.37,NINGUNA,En riesgo,0.6134194326621882,train
+779,User_779,user779@example.com,4318.91,40.9,MEDIA,En observacion,0.46372017528134146,test
+780,User_780,user780@example.com,2430.51,42.47,BAJA,En riesgo,0.6125503894260633,val
+781,User_781,user781@example.com,3449.89,17.45,BAJA,En observacion,0.4662676642237874,val
+782,User_782,user782@example.com,3298.91,31.49,BAJA,En observacion,0.5131683562223167,train
+783,User_783,user783@example.com,3731.14,39.95,BAJA,En observacion,0.5508124416197904,val
+784,User_784,user784@example.com,1860.78,22.47,BAJA,En observacion,0.5807023110847387,val
+785,User_785,user785@example.com,2358.54,35.57,NINGUNA,En riesgo,0.6950710063974784,train
+786,User_786,user786@example.com,2891.85,65.35,MEDIA,En observacion,0.5301928047279998,train
+787,User_787,user787@example.com,1974.38,47.62,BAJA,En observacion,0.5563885445302876,train
+788,User_788,user788@example.com,3694.61,5.0,NINGUNA,En observacion,0.5798977475648163,train
+789,User_789,user789@example.com,1691.15,31.99,ALTA,Saludable,0.20063882100925834,test
+790,User_790,user790@example.com,2745.29,28.56,ALTA,Saludable,0.256473475988536,train
+791,User_791,user791@example.com,6472.77,35.72,ALTA,Saludable,0.20596775566292577,val
+792,User_792,user792@example.com,2966.82,65.36,NINGUNA,En riesgo,0.7203334247703596,train
+793,User_793,user793@example.com,1949.8,37.44,MEDIA,En observacion,0.4239902026292924,train
+794,User_794,user794@example.com,2654.47,41.39,ALTA,Saludable,0.2874410763707876,train
+795,User_795,user795@example.com,4949.69,33.73,MEDIA,Saludable,0.28681211607969503,train
+796,User_796,user796@example.com,4752.51,45.8,BAJA,En observacion,0.4623267896064418,val
+797,User_797,user797@example.com,4510.84,38.48,BAJA,En observacion,0.4384251198991653,train
+798,User_798,user798@example.com,5026.06,30.3,NINGUNA,En observacion,0.5920759452711677,val
+799,User_799,user799@example.com,1204.36,44.28,BAJA,En observacion,0.5763043738658065,train
+800,User_800,user800@example.com,2833.9,16.24,BAJA,En observacion,0.46017014131776834,train
+801,User_801,user801@example.com,3212.26,42.04,BAJA,En observacion,0.5746552999860047,train
+802,User_802,user802@example.com,2113.69,28.45,MEDIA,En observacion,0.37508668176870885,val
+803,User_803,user803@example.com,3770.1,23.06,MEDIA,En observacion,0.34003030926546235,train
+804,User_804,user804@example.com,3086.03,46.16,MEDIA,En observacion,0.43079572883909484,train
+805,User_805,user805@example.com,7074.83,14.84,MEDIA,Saludable,0.1439639141592025,train
+806,User_806,user806@example.com,4933.74,7.0,NINGUNA,En observacion,0.5393680594918462,train
+807,User_807,user807@example.com,5113.86,41.1,BAJA,En observacion,0.4200843496297062,train
+808,User_808,user808@example.com,3346.9,16.83,BAJA,En observacion,0.45951883095332624,train
+809,User_809,user809@example.com,2661.7,12.11,MEDIA,Saludable,0.2962169038704281,val
+810,User_810,user810@example.com,1639.19,28.89,NINGUNA,En riesgo,0.6835861103478351,val
+811,User_811,user811@example.com,6347.74,11.9,NINGUNA,En observacion,0.5836991867425856,train
+812,User_812,user812@example.com,4145.36,59.26,MEDIA,En observacion,0.48416229687616064,train
+813,User_813,user813@example.com,3060.61,46.69,ALTA,Saludable,0.28818980734513183,train
+814,User_814,user814@example.com,6302.1,32.16,NINGUNA,En riesgo,0.622638130596223,train
+815,User_815,user815@example.com,5073.85,29.59,MEDIA,Saludable,0.15444881790308082,train
+816,User_816,user816@example.com,2724.23,16.21,MEDIA,En observacion,0.33004728163124836,train
+817,User_817,user817@example.com,3249.08,29.51,ALTA,Saludable,0.2440687615108718,train
+818,User_818,user818@example.com,1934.57,5.0,NINGUNA,En observacion,0.5461742198398247,train
+819,User_819,user819@example.com,5248.68,27.82,BAJA,En observacion,0.4846636326831005,train
+820,User_820,user820@example.com,4634.51,45.2,ALTA,Saludable,0.3261283131238987,train
+821,User_821,user821@example.com,2456.01,36.64,MEDIA,En observacion,0.46145625956748315,train
+822,User_822,user822@example.com,3060.51,27.44,MEDIA,En observacion,0.35201930384491764,test
+823,User_823,user823@example.com,2320.89,45.35,MEDIA,Saludable,0.3226398933371449,val
+824,User_824,user824@example.com,1794.15,18.69,MEDIA,Saludable,0.28617343105574067,test
+825,User_825,user825@example.com,2841.63,53.26,BAJA,En riesgo,0.6374172084503186,val
+826,User_826,user826@example.com,5484.51,9.11,NINGUNA,En observacion,0.4542822048832173,train
+827,User_827,user827@example.com,3225.82,47.95,ALTA,En observacion,0.3342730364661324,train
+828,User_828,user828@example.com,2612.57,46.75,ALTA,Saludable,0.29881236819777524,train
+829,User_829,user829@example.com,5223.9,56.9,NINGUNA,En riesgo,0.6220967474526091,train
+830,User_830,user830@example.com,4485.9,36.28,ALTA,Saludable,0.18873608891795368,test
+831,User_831,user831@example.com,4708.91,42.2,ALTA,Saludable,0.22313875249259363,train
+832,User_832,user832@example.com,4160.11,44.76,BAJA,En observacion,0.4582639224120092,val
+833,User_833,user833@example.com,3116.2,49.56,MEDIA,En observacion,0.49475950244105815,train
+834,User_834,user834@example.com,2161.81,64.94,BAJA,En riesgo,0.817191990300268,train
+835,User_835,user835@example.com,3384.63,51.23,ALTA,En observacion,0.36684981095415403,train
+836,User_836,user836@example.com,3701.84,38.45,MEDIA,En observacion,0.41850265445456974,train
+837,User_837,user837@example.com,4804.95,28.66,NINGUNA,En riesgo,0.6227070883307925,test
+838,User_838,user838@example.com,5226.13,26.63,ALTA,Saludable,0.11683735085141522,test
+839,User_839,user839@example.com,3263.98,50.87,BAJA,En riesgo,0.6245933811102383,train
+840,User_840,user840@example.com,4074.15,34.92,NINGUNA,En riesgo,0.6641867702796256,train
+841,User_841,user841@example.com,3423.65,41.81,ALTA,Saludable,0.24721490012202038,train
+842,User_842,user842@example.com,4832.25,30.59,ALTA,Saludable,0.19347034990709666,train
+843,User_843,user843@example.com,5422.77,34.1,NINGUNA,En riesgo,0.624512820982119,val
+844,User_844,user844@example.com,2861.72,48.36,ALTA,En observacion,0.34272300080532825,train
+845,User_845,user845@example.com,4013.5,62.29,MEDIA,En observacion,0.49704869486073455,val
+846,User_846,user846@example.com,5581.35,42.38,ALTA,Saludable,0.20975794536662098,train
+847,User_847,user847@example.com,4037.71,20.05,ALTA,Saludable,0.15052428319169894,train
+848,User_848,user848@example.com,5599.98,27.82,BAJA,En observacion,0.38705158679784396,train
+849,User_849,user849@example.com,3090.62,40.65,MEDIA,En observacion,0.4554687670818513,train
+850,User_850,user850@example.com,5165.7,45.25,ALTA,Saludable,0.1884703394399733,val
+851,User_851,user851@example.com,4112.2,36.05,MEDIA,En observacion,0.3431330236277933,val
+852,User_852,user852@example.com,3081.07,19.56,NINGUNA,En observacion,0.5126164232078233,train
+853,User_853,user853@example.com,4314.19,53.27,NINGUNA,En riesgo,0.6654018860373926,train
+854,User_854,user854@example.com,3505.17,26.96,MEDIA,Saludable,0.2602301646203527,train
+855,User_855,user855@example.com,4596.54,28.52,MEDIA,Saludable,0.3239888346358051,val
+856,User_856,user856@example.com,3400.81,37.4,BAJA,En observacion,0.5396239493083772,train
+857,User_857,user857@example.com,4532.79,17.22,ALTA,Saludable,0.16854859577874143,train
+858,User_858,user858@example.com,3551.75,28.8,NINGUNA,En riesgo,0.6260187128291443,train
+859,User_859,user859@example.com,3041.95,27.39,MEDIA,Saludable,0.27279585990444766,val
+860,User_860,user860@example.com,6774.66,35.49,ALTA,Saludable,0.14475535826499655,train
+861,User_861,user861@example.com,2601.31,57.7,BAJA,En observacion,0.590207396874086,train
+862,User_862,user862@example.com,4686.12,7.31,MEDIA,Saludable,0.1885547069903795,train
+863,User_863,user863@example.com,3481.94,22.57,MEDIA,Saludable,0.2931394010602817,train
+864,User_864,user864@example.com,3777.83,21.17,ALTA,Saludable,0.12423281889592508,val
+865,User_865,user865@example.com,4467.02,36.31,MEDIA,En observacion,0.3894351587813386,train
+866,User_866,user866@example.com,1980.07,26.8,NINGUNA,En riesgo,0.6198909319836975,train
+867,User_867,user867@example.com,4221.95,57.48,NINGUNA,En riesgo,0.7918862792038107,test
+868,User_868,user868@example.com,2999.39,47.17,MEDIA,En observacion,0.38861327306236904,val
+869,User_869,user869@example.com,4696.02,11.38,NINGUNA,En observacion,0.5594627438905984,train
+870,User_870,user870@example.com,3014.53,50.26,MEDIA,En observacion,0.4732223280412824,test
+871,User_871,user871@example.com,6305.2,31.78,BAJA,En observacion,0.4486271724662645,val
+872,User_872,user872@example.com,4175.44,50.71,ALTA,En observacion,0.3583849996213887,train
+873,User_873,user873@example.com,3517.35,35.66,ALTA,Saludable,0.2317276306548454,train
+874,User_874,user874@example.com,2939.77,43.58,BAJA,En observacion,0.5478797616500345,train
+875,User_875,user875@example.com,3486.74,29.22,NINGUNA,En riesgo,0.637136248862378,train
+876,User_876,user876@example.com,4537.22,34.65,ALTA,Saludable,0.21213441210485817,train
+877,User_877,user877@example.com,2094.45,39.75,BAJA,En observacion,0.559087106353171,train
+878,User_878,user878@example.com,3605.36,28.45,BAJA,En observacion,0.39009564496306603,train
+879,User_879,user879@example.com,4777.57,35.24,ALTA,Saludable,0.21466277497255282,test
+880,User_880,user880@example.com,4280.72,15.62,NINGUNA,En observacion,0.5745118902622598,val
+881,User_881,user881@example.com,4731.72,40.39,BAJA,En observacion,0.5314323371537566,train
+882,User_882,user882@example.com,1298.66,23.24,ALTA,Saludable,0.19570307238418705,train
+883,User_883,user883@example.com,3013.34,60.58,MEDIA,En observacion,0.4910697093891536,test
+884,User_884,user884@example.com,4253.53,26.3,ALTA,Saludable,0.2005665375267689,test
+885,User_885,user885@example.com,6359.8,41.12,MEDIA,En observacion,0.37842032181797425,train
+886,User_886,user886@example.com,5321.92,36.14,MEDIA,En observacion,0.38997812091798606,train
+887,User_887,user887@example.com,2703.44,56.26,BAJA,En riesgo,0.6465474751592805,test
+888,User_888,user888@example.com,4849.75,23.55,MEDIA,Saludable,0.3069390792723801,train
+889,User_889,user889@example.com,3391.03,37.31,BAJA,En observacion,0.5526365559055798,test
+890,User_890,user890@example.com,3982.51,23.21,MEDIA,Saludable,0.2507207073423112,val
+891,User_891,user891@example.com,5825.27,51.6,BAJA,En observacion,0.5650355206205535,train
+892,User_892,user892@example.com,3675.93,14.92,ALTA,Saludable,0.18286224365158055,train
+893,User_893,user893@example.com,4690.44,10.77,MEDIA,Saludable,0.14874270785910632,train
+894,User_894,user894@example.com,4434.36,26.76,MEDIA,En observacion,0.3702551443489901,train
+895,User_895,user895@example.com,3639.56,24.64,ALTA,Saludable,0.19284290038377283,test
+896,User_896,user896@example.com,3806.95,27.6,ALTA,Saludable,0.27500128767344073,val
+897,User_897,user897@example.com,4460.04,24.51,BAJA,En observacion,0.41205134630032436,train
+898,User_898,user898@example.com,2503.75,46.86,MEDIA,En observacion,0.47092725222844456,test
+899,User_899,user899@example.com,5268.09,24.58,NINGUNA,En observacion,0.5783322855478429,train
+900,User_900,user900@example.com,3087.23,18.72,ALTA,Saludable,0.13508391100105221,train
+901,User_901,user901@example.com,3894.75,5.0,ALTA,Saludable,0.12611510253984,train
+902,User_902,user902@example.com,3329.83,42.23,MEDIA,En observacion,0.4449639273688983,test
+903,User_903,user903@example.com,3159.67,17.82,MEDIA,Saludable,0.24277755626394204,train
+904,User_904,user904@example.com,3860.08,31.55,BAJA,En observacion,0.43702817828698437,train
+905,User_905,user905@example.com,4040.28,13.99,BAJA,En observacion,0.3979163529922078,train
+906,User_906,user906@example.com,5554.82,48.83,NINGUNA,En riesgo,0.6897165193604606,train
+907,User_907,user907@example.com,5554.46,29.16,MEDIA,En observacion,0.3966191202452259,val
+908,User_908,user908@example.com,4269.31,42.1,NINGUNA,En riesgo,0.613081381000923,train
+909,User_909,user909@example.com,2600.75,19.44,BAJA,En observacion,0.4859067224250229,train
+910,User_910,user910@example.com,2258.25,49.64,BAJA,En riesgo,0.6369605346971207,train
+911,User_911,user911@example.com,3894.48,30.78,ALTA,Saludable,0.2367368058123773,train
+912,User_912,user912@example.com,3331.55,31.74,BAJA,En observacion,0.474939298077209,val
+913,User_913,user913@example.com,3910.46,13.74,MEDIA,Saludable,0.30850183999178227,train
+914,User_914,user914@example.com,1821.95,14.34,NINGUNA,En observacion,0.5521297372914529,test
+915,User_915,user915@example.com,2792.92,36.69,NINGUNA,En riesgo,0.6849895432058095,train
+916,User_916,user916@example.com,4053.89,11.21,BAJA,Saludable,0.29043834324304774,train
+917,User_917,user917@example.com,3992.33,51.29,NINGUNA,En riesgo,0.7587097550665522,test
+918,User_918,user918@example.com,2562.37,5.0,BAJA,En observacion,0.38462433782985805,train
+919,User_919,user919@example.com,5637.24,43.23,BAJA,En riesgo,0.609796813598089,test
+920,User_920,user920@example.com,2244.81,21.12,NINGUNA,En riesgo,0.6157190002837158,test
+921,User_921,user921@example.com,3269.83,41.5,ALTA,Saludable,0.23513730956250978,val
+922,User_922,user922@example.com,2731.61,47.88,BAJA,En observacion,0.5625112840021294,test
+923,User_923,user923@example.com,2722.52,5.0,MEDIA,Saludable,0.27443142807401105,test
+924,User_924,user924@example.com,1372.59,74.31,NINGUNA,En riesgo,0.8030605862112918,train
+925,User_925,user925@example.com,4344.34,18.55,NINGUNA,En observacion,0.5939304689785572,test
+926,User_926,user926@example.com,1224.87,39.21,MEDIA,En observacion,0.5314097117097567,train
+927,User_927,user927@example.com,5404.28,40.42,ALTA,Saludable,0.24747708334607954,test
+928,User_928,user928@example.com,3785.24,51.45,BAJA,En observacion,0.5392678856251893,test
+929,User_929,user929@example.com,3665.25,40.01,ALTA,Saludable,0.24644101439416524,train
+930,User_930,user930@example.com,5725.91,23.0,NINGUNA,En observacion,0.5429629587692323,train
+931,User_931,user931@example.com,3448.73,30.86,ALTA,Saludable,0.2712411196911341,train
+932,User_932,user932@example.com,3995.6,25.9,BAJA,En observacion,0.4621966846139736,train
+933,User_933,user933@example.com,3406.19,30.58,MEDIA,En observacion,0.4310528506813312,val
+934,User_934,user934@example.com,7225.2,6.85,BAJA,En observacion,0.3363380722983068,train
+935,User_935,user935@example.com,2795.45,16.19,ALTA,Saludable,0.0968948746406201,val
+936,User_936,user936@example.com,1914.91,25.93,MEDIA,Saludable,0.26050213464504657,train
+937,User_937,user937@example.com,4774.08,54.34,NINGUNA,En riesgo,0.7534163237470317,train
+938,User_938,user938@example.com,1188.97,44.77,BAJA,En observacion,0.5322875289787592,train
+939,User_939,user939@example.com,3781.25,39.03,BAJA,En observacion,0.5903870258001994,train
+940,User_940,user940@example.com,1896.5,41.86,ALTA,En observacion,0.37560174110733835,train
+941,User_941,user941@example.com,5082.67,46.27,MEDIA,En observacion,0.43411850825597387,test
+942,User_942,user942@example.com,3905.92,41.15,MEDIA,En observacion,0.3588846044913215,train
+943,User_943,user943@example.com,4310.75,24.19,NINGUNA,En riesgo,0.6044700025906511,train
+944,User_944,user944@example.com,2678.06,39.45,MEDIA,En observacion,0.44047061476337923,train
+945,User_945,user945@example.com,5931.73,43.12,NINGUNA,En riesgo,0.7049059005475026,train
+946,User_946,user946@example.com,4455.46,37.86,ALTA,Saludable,0.2838956540383742,train
+947,User_947,user947@example.com,4361.22,33.61,ALTA,Saludable,0.15861610488235475,train
+948,User_948,user948@example.com,4743.09,22.29,MEDIA,Saludable,0.26876761807034694,train
+949,User_949,user949@example.com,3182.67,23.63,MEDIA,Saludable,0.30229072189546496,train
+950,User_950,user950@example.com,3573.93,35.23,BAJA,En observacion,0.5466376711893324,train
+951,User_951,user951@example.com,2643.77,38.33,BAJA,En observacion,0.5089474694279574,train
+952,User_952,user952@example.com,3431.51,42.66,ALTA,Saludable,0.32915821678120283,val
+953,User_953,user953@example.com,5163.18,48.9,MEDIA,En observacion,0.35831283295968025,train
+954,User_954,user954@example.com,2985.61,37.58,ALTA,Saludable,0.2907923734992392,val
+955,User_955,user955@example.com,3222.89,22.74,BAJA,En observacion,0.4214224210582009,val
+956,User_956,user956@example.com,4639.3,41.95,NINGUNA,En observacion,0.5834312346769878,train
+957,User_957,user957@example.com,2987.98,50.67,MEDIA,En observacion,0.488849296381288,train
+958,User_958,user958@example.com,5060.96,24.55,NINGUNA,En observacion,0.5946833283542363,train
+959,User_959,user959@example.com,2064.47,20.76,BAJA,En observacion,0.5364479364832172,train
+960,User_960,user960@example.com,3599.6,40.24,BAJA,En observacion,0.44534736143189724,train
+961,User_961,user961@example.com,1639.72,16.47,ALTA,Saludable,0.25160351042507856,train
+962,User_962,user962@example.com,5845.98,30.06,BAJA,En observacion,0.4722514102144148,val
+963,User_963,user963@example.com,5870.81,27.96,ALTA,Saludable,0.19797372481588482,train
+964,User_964,user964@example.com,4131.86,46.35,ALTA,Saludable,0.3117260647006801,val
+965,User_965,user965@example.com,5549.37,33.54,ALTA,Saludable,0.17168983329480314,train
+966,User_966,user966@example.com,2334.0,34.41,ALTA,Saludable,0.25435766077991334,train
+967,User_967,user967@example.com,5092.55,7.82,NINGUNA,En observacion,0.5217313670815517,train
+968,User_968,user968@example.com,4456.38,44.33,MEDIA,En observacion,0.47237454097677045,val
+969,User_969,user969@example.com,4976.06,51.07,ALTA,En observacion,0.38751633034648236,train
+970,User_970,user970@example.com,4328.2,38.74,NINGUNA,En riesgo,0.6954306737042377,val
+971,User_971,user971@example.com,4148.8,61.53,NINGUNA,En riesgo,0.7244878242401999,train
+972,User_972,user972@example.com,3453.52,42.5,MEDIA,En observacion,0.3465311912599029,val
+973,User_973,user973@example.com,6112.66,31.9,NINGUNA,En riesgo,0.6069616949402468,test
+974,User_974,user974@example.com,3942.16,44.38,NINGUNA,En riesgo,0.7200560741494496,test
+975,User_975,user975@example.com,4197.98,34.01,ALTA,Saludable,0.19167829193248317,train
+976,User_976,user976@example.com,4547.76,19.12,ALTA,Saludable,0.22485267012312993,train
+977,User_977,user977@example.com,6249.94,35.02,BAJA,En observacion,0.3865649773934457,val
+978,User_978,user978@example.com,4621.75,50.17,ALTA,En observacion,0.35618098327654407,train
+979,User_979,user979@example.com,3031.58,41.06,ALTA,Saludable,0.22682916948046022,train
+980,User_980,user980@example.com,4223.0,43.44,ALTA,Saludable,0.22230803232489726,train
+981,User_981,user981@example.com,3678.82,49.29,BAJA,En observacion,0.5865117818366115,train
+982,User_982,user982@example.com,2552.25,58.31,MEDIA,En observacion,0.5472391113276113,train
+983,User_983,user983@example.com,5417.35,20.3,ALTA,Saludable,0.29287203577031096,train
+984,User_984,user984@example.com,3496.32,38.62,BAJA,En observacion,0.4606832958190246,val
+985,User_985,user985@example.com,3038.56,37.27,NINGUNA,En riesgo,0.699005821918238,test
+986,User_986,user986@example.com,4196.69,28.01,ALTA,Saludable,0.18981517692166525,train
+987,User_987,user987@example.com,1557.79,22.89,ALTA,Saludable,0.21634617753180674,train
+988,User_988,user988@example.com,4254.0,18.04,BAJA,En observacion,0.4425530611950135,train
+989,User_989,user989@example.com,5583.84,32.5,MEDIA,En observacion,0.3421469339325911,train
+990,User_990,user990@example.com,4847.27,48.43,BAJA,En observacion,0.5054698010417334,test
+991,User_991,user991@example.com,7227.93,39.33,NINGUNA,En observacion,0.5952001258960985,train
+992,User_992,user992@example.com,3713.48,27.25,ALTA,Saludable,0.19317392082859516,train
+993,User_993,user993@example.com,6687.1,40.15,NINGUNA,En riesgo,0.6207143804165758,train
+994,User_994,user994@example.com,6210.61,31.91,NINGUNA,En observacion,0.5398171451729881,train
+995,User_995,user995@example.com,1933.59,25.11,NINGUNA,En observacion,0.5914967648092254,train
+996,User_996,user996@example.com,3728.01,27.63,NINGUNA,En observacion,0.5901910378315164,train
+997,User_997,user997@example.com,2540.66,9.47,NINGUNA,En observacion,0.5218368406830245,train
+998,User_998,user998@example.com,5174.97,16.95,BAJA,En observacion,0.33714209188784483,train
+999,User_999,user999@example.com,2850.86,29.28,NINGUNA,En observacion,0.5992991924248612,train
+1000,User_1000,user1000@example.com,3335.3,28.16,MEDIA,En observacion,0.3632544560056985,train
+1001,User_1001,user1001@example.com,2751.43,29.31,MEDIA,En observacion,0.3869089499582203,train
+1002,User_1002,user1002@example.com,3289.67,34.53,MEDIA,En observacion,0.3412822557904593,train
+1003,User_1003,user1003@example.com,3138.97,55.28,BAJA,En riesgo,0.6140136828715214,test
+1004,User_1004,user1004@example.com,2375.12,37.76,BAJA,En riesgo,0.6700381831990249,train
+1005,User_1005,user1005@example.com,2414.43,13.6,MEDIA,En observacion,0.34499754861812554,train
+1006,User_1006,user1006@example.com,3795.13,33.79,BAJA,En observacion,0.44924350964996207,train
+1007,User_1007,user1007@example.com,3154.55,17.21,ALTA,Saludable,0.05219936663290947,train
+1008,User_1008,user1008@example.com,4785.26,62.49,NINGUNA,En riesgo,0.7821889631059133,test
+1009,User_1009,user1009@example.com,5055.6,28.79,ALTA,Saludable,0.22505701142739132,val
+1010,User_1010,user1010@example.com,3981.34,30.82,MEDIA,En observacion,0.3962977735592161,train
+1011,User_1011,user1011@example.com,2678.98,60.54,ALTA,En observacion,0.3684619165924917,train
+1012,User_1012,user1012@example.com,3812.3,53.7,ALTA,Saludable,0.31706917453169847,train
+1013,User_1013,user1013@example.com,3356.91,30.9,ALTA,Saludable,0.27882952024866303,train
+1014,User_1014,user1014@example.com,3236.75,58.44,BAJA,En observacion,0.5985912834085347,train
+1015,User_1015,user1015@example.com,2309.76,38.93,BAJA,En observacion,0.4791216125371683,val
+1016,User_1016,user1016@example.com,4142.27,68.28,NINGUNA,En riesgo,0.7716401769799974,train
+1017,User_1017,user1017@example.com,2839.01,5.0,ALTA,Saludable,0.1624581537284831,train
+1018,User_1018,user1018@example.com,4488.8,38.25,BAJA,En observacion,0.44309487361835775,train
+1019,User_1019,user1019@example.com,2630.72,21.37,MEDIA,Saludable,0.3010865908516687,train
+1020,User_1020,user1020@example.com,2618.66,26.78,NINGUNA,En riesgo,0.6630768205890154,test
+1021,User_1021,user1021@example.com,6102.47,36.01,MEDIA,En observacion,0.3598780110676701,train
+1022,User_1022,user1022@example.com,2408.38,53.27,BAJA,En observacion,0.5788980567743303,train
+1023,User_1023,user1023@example.com,3378.0,36.74,ALTA,Saludable,0.20974757732947633,train
+1024,User_1024,user1024@example.com,5462.66,27.03,NINGUNA,En observacion,0.5934039575594021,test
+1025,User_1025,user1025@example.com,4538.6,24.76,BAJA,En observacion,0.4024797891806494,val
+1026,User_1026,user1026@example.com,5662.92,22.42,BAJA,En observacion,0.3603762038858272,train
+1027,User_1027,user1027@example.com,908.72,39.44,MEDIA,En observacion,0.46920234785785814,train
+1028,User_1028,user1028@example.com,4339.69,25.44,NINGUNA,En riesgo,0.6060301476775742,train
+1029,User_1029,user1029@example.com,3689.89,24.28,BAJA,En observacion,0.43698930911608863,test
+1030,User_1030,user1030@example.com,3788.98,20.95,NINGUNA,En observacion,0.5398426471765557,val
+1031,User_1031,user1031@example.com,2875.59,33.96,ALTA,Saludable,0.293402065610855,test
+1032,User_1032,user1032@example.com,3718.05,25.9,BAJA,En observacion,0.4797208918026776,train
+1033,User_1033,user1033@example.com,3793.08,64.09,BAJA,En observacion,0.5572346080921958,train
+1034,User_1034,user1034@example.com,7391.13,27.11,MEDIA,En observacion,0.34282820141042236,train
+1035,User_1035,user1035@example.com,5350.21,26.01,MEDIA,Saludable,0.2512283839057036,train
+1036,User_1036,user1036@example.com,3878.34,46.52,MEDIA,En observacion,0.4373909502728144,train
+1037,User_1037,user1037@example.com,3875.65,25.24,ALTA,Saludable,0.19100386026155025,train
+1038,User_1038,user1038@example.com,1594.7,5.0,ALTA,Saludable,0.22883420748805544,val
+1039,User_1039,user1039@example.com,5423.95,11.7,MEDIA,Saludable,0.2258760693239563,test
+1040,User_1040,user1040@example.com,1747.38,26.45,MEDIA,En observacion,0.3927370617786504,train
+1041,User_1041,user1041@example.com,4260.09,22.78,NINGUNA,En observacion,0.545320360593698,train
+1042,User_1042,user1042@example.com,3421.01,28.25,BAJA,En observacion,0.5358385233431286,val
+1043,User_1043,user1043@example.com,4915.55,39.88,NINGUNA,En riesgo,0.6149813037890126,train
+1044,User_1044,user1044@example.com,2870.3,45.28,ALTA,En observacion,0.3923723166648206,train
+1045,User_1045,user1045@example.com,6121.99,25.4,BAJA,En observacion,0.4012016132644925,train
+1046,User_1046,user1046@example.com,1388.66,36.47,ALTA,En observacion,0.3528712140931507,train
+1047,User_1047,user1047@example.com,5045.73,24.46,BAJA,En observacion,0.36522789835859437,train
+1048,User_1048,user1048@example.com,1537.96,36.38,MEDIA,En observacion,0.4374852698213339,train
+1049,User_1049,user1049@example.com,6162.05,45.43,ALTA,Saludable,0.1657853255155079,test
+1050,User_1050,user1050@example.com,4564.66,48.04,ALTA,Saludable,0.2578156486988065,train
+1051,User_1051,user1051@example.com,6310.01,39.97,MEDIA,En observacion,0.37822235506187807,train
+1052,User_1052,user1052@example.com,3040.39,48.14,ALTA,En observacion,0.3832562212875491,train
+1053,User_1053,user1053@example.com,6985.14,18.68,NINGUNA,En observacion,0.4391201002073578,train
+1054,User_1054,user1054@example.com,1995.0,10.41,NINGUNA,En observacion,0.5398151946969564,test
+1055,User_1055,user1055@example.com,3292.36,27.97,NINGUNA,En observacion,0.5563985128683567,val
+1056,User_1056,user1056@example.com,6117.0,39.86,ALTA,Saludable,0.15729168050921666,train
+1057,User_1057,user1057@example.com,2449.86,34.17,BAJA,En observacion,0.5420740590766067,train
+1058,User_1058,user1058@example.com,3844.96,32.2,BAJA,En observacion,0.401283337814243,train
+1059,User_1059,user1059@example.com,4489.9,47.37,ALTA,Saludable,0.3197797174387212,train
+1060,User_1060,user1060@example.com,4136.59,20.77,ALTA,Saludable,0.2532720973957779,train
+1061,User_1061,user1061@example.com,3498.06,30.95,NINGUNA,En riesgo,0.6533827117211323,train
+1062,User_1062,user1062@example.com,4622.55,22.63,ALTA,Saludable,0.134732701338015,train
+1063,User_1063,user1063@example.com,2627.57,22.46,MEDIA,Saludable,0.24756374454918628,train
+1064,User_1064,user1064@example.com,5371.49,40.29,MEDIA,En observacion,0.34207199417931594,train
+1065,User_1065,user1065@example.com,3956.41,34.06,ALTA,Saludable,0.1365557304152574,val
+1066,User_1066,user1066@example.com,3129.37,14.48,BAJA,En observacion,0.5158481124615404,train
+1067,User_1067,user1067@example.com,2524.56,36.84,NINGUNA,En riesgo,0.6180112999416587,train
+1068,User_1068,user1068@example.com,5882.8,53.96,BAJA,En observacion,0.5002017011267132,train
+1069,User_1069,user1069@example.com,4475.45,63.64,MEDIA,En observacion,0.5329597785830558,val
+1070,User_1070,user1070@example.com,5849.77,10.18,MEDIA,Saludable,0.1781244977360268,val
+1071,User_1071,user1071@example.com,1242.24,42.0,NINGUNA,En riesgo,0.7410263488763127,train
+1072,User_1072,user1072@example.com,2174.62,18.05,ALTA,Saludable,0.3110347087789211,train
+1073,User_1073,user1073@example.com,2265.42,37.23,BAJA,En observacion,0.5010863288534143,test
+1074,User_1074,user1074@example.com,4854.56,36.08,BAJA,En observacion,0.4707265515049424,train
+1075,User_1075,user1075@example.com,3959.58,8.84,NINGUNA,En observacion,0.544650098878188,train
+1076,User_1076,user1076@example.com,6214.26,6.38,NINGUNA,En observacion,0.41917337446102493,train
+1077,User_1077,user1077@example.com,1754.37,36.94,ALTA,Saludable,0.26825386832323694,train
+1078,User_1078,user1078@example.com,3688.5,43.35,ALTA,Saludable,0.20914154654500544,train
+1079,User_1079,user1079@example.com,2938.74,7.02,NINGUNA,En observacion,0.5779213439727945,val
+1080,User_1080,user1080@example.com,5325.42,33.6,NINGUNA,En riesgo,0.6676382073771095,train
+1081,User_1081,user1081@example.com,3319.19,52.3,ALTA,Saludable,0.2971847885484853,train
+1082,User_1082,user1082@example.com,3236.55,12.21,MEDIA,Saludable,0.14265190759447152,train
+1083,User_1083,user1083@example.com,5435.14,26.67,NINGUNA,En observacion,0.5030389486582211,test
+1084,User_1084,user1084@example.com,5234.01,28.83,NINGUNA,En riesgo,0.6392923492127873,train
+1085,User_1085,user1085@example.com,3692.71,41.16,ALTA,Saludable,0.2566415179369499,train
+1086,User_1086,user1086@example.com,2265.01,37.86,NINGUNA,En riesgo,0.7003619985642517,train
+1087,User_1087,user1087@example.com,3956.86,34.6,MEDIA,En observacion,0.34581694415786135,test
+1088,User_1088,user1088@example.com,3515.99,41.8,NINGUNA,En riesgo,0.623060485787266,train
+1089,User_1089,user1089@example.com,6620.71,60.85,MEDIA,En observacion,0.46464096577329717,train
+1090,User_1090,user1090@example.com,1912.78,20.56,BAJA,En observacion,0.4563248110151977,train
+1091,User_1091,user1091@example.com,4278.65,37.7,ALTA,Saludable,0.2637960088452421,test
+1092,User_1092,user1092@example.com,1978.71,45.72,MEDIA,En observacion,0.35614212357112607,train
+1093,User_1093,user1093@example.com,3500.75,41.05,BAJA,En observacion,0.5504668015792391,train
+1094,User_1094,user1094@example.com,4274.64,14.42,ALTA,Saludable,0.09926844987862266,train
+1095,User_1095,user1095@example.com,2183.93,18.96,MEDIA,Saludable,0.24502402593300754,train
+1096,User_1096,user1096@example.com,4552.47,26.67,BAJA,En observacion,0.45487563908014883,val
+1097,User_1097,user1097@example.com,3473.99,29.34,NINGUNA,En observacion,0.5994119379982226,train
+1098,User_1098,user1098@example.com,5348.65,33.6,MEDIA,Saludable,0.3144462068775815,train
+1099,User_1099,user1099@example.com,2544.36,37.3,ALTA,Saludable,0.3210511123824376,train
+1100,User_1100,user1100@example.com,2845.89,61.32,NINGUNA,En riesgo,0.7734996440391719,train
+1101,User_1101,user1101@example.com,6440.55,40.3,ALTA,Saludable,0.19779315941651232,test
+1102,User_1102,user1102@example.com,6173.11,38.38,MEDIA,En observacion,0.38160032525584303,train
+1103,User_1103,user1103@example.com,4350.27,56.97,MEDIA,En observacion,0.436718040731336,val
+1104,User_1104,user1104@example.com,3955.8,24.0,ALTA,Saludable,0.27473184612789125,train
+1105,User_1105,user1105@example.com,4817.48,30.52,MEDIA,En observacion,0.3507136176336042,train
+1106,User_1106,user1106@example.com,5383.99,53.01,ALTA,Saludable,0.29461318099240236,train
+1107,User_1107,user1107@example.com,3596.01,45.98,ALTA,Saludable,0.27881520156964257,train
+1108,User_1108,user1108@example.com,2931.58,34.15,MEDIA,En observacion,0.4496564144896831,val
+1109,User_1109,user1109@example.com,3891.37,45.09,NINGUNA,En observacion,0.5917120170361477,train
+1110,User_1110,user1110@example.com,3225.5,33.58,BAJA,En observacion,0.5216123736012058,train
+1111,User_1111,user1111@example.com,4801.92,54.62,BAJA,En observacion,0.5068131679887602,val
+1112,User_1112,user1112@example.com,5216.48,33.06,MEDIA,En observacion,0.36995386426475657,train
+1113,User_1113,user1113@example.com,5090.1,36.1,NINGUNA,En riesgo,0.6001916918444798,train
+1114,User_1114,user1114@example.com,4479.2,24.06,MEDIA,En observacion,0.3323558658636551,train
+1115,User_1115,user1115@example.com,6216.49,41.65,MEDIA,Saludable,0.3032723932706613,train
+1116,User_1116,user1116@example.com,2807.04,41.76,NINGUNA,En observacion,0.5917971830233918,train
+1117,User_1117,user1117@example.com,3547.88,30.08,ALTA,Saludable,0.2019125517853851,train
+1118,User_1118,user1118@example.com,3551.11,40.83,ALTA,Saludable,0.2797253679470256,train
+1119,User_1119,user1119@example.com,2033.64,22.39,NINGUNA,En riesgo,0.6013869689742508,train
+1120,User_1120,user1120@example.com,1347.87,50.73,NINGUNA,En riesgo,0.8357827931544148,train
+1121,User_1121,user1121@example.com,2517.27,29.4,MEDIA,En observacion,0.34973761697030936,test
+1122,User_1122,user1122@example.com,5622.07,32.91,NINGUNA,En riesgo,0.6296638450862335,train
+1123,User_1123,user1123@example.com,1756.95,36.25,ALTA,Saludable,0.25418343307962393,val
+1124,User_1124,user1124@example.com,3465.98,36.09,BAJA,En observacion,0.486843217771891,train
+1125,User_1125,user1125@example.com,1252.18,24.85,BAJA,En observacion,0.5485762704563246,train
+1126,User_1126,user1126@example.com,1653.39,9.03,BAJA,En observacion,0.4943808488726618,train
+1127,User_1127,user1127@example.com,6662.06,8.99,MEDIA,Saludable,0.2225890095110813,train
+1128,User_1128,user1128@example.com,4709.47,42.1,BAJA,En observacion,0.49776538295506034,train
+1129,User_1129,user1129@example.com,3403.6,25.55,ALTA,Saludable,0.20465396335703198,train
+1130,User_1130,user1130@example.com,3578.27,41.48,MEDIA,En observacion,0.4330696468684101,train
+1131,User_1131,user1131@example.com,2814.43,44.53,NINGUNA,En riesgo,0.6701769808292591,train
+1132,User_1132,user1132@example.com,6134.23,33.34,BAJA,En observacion,0.4001810761342396,val
+1133,User_1133,user1133@example.com,3270.74,45.16,ALTA,Saludable,0.25314191552881377,train
+1134,User_1134,user1134@example.com,1763.28,5.0,BAJA,En observacion,0.3806973971689097,train
+1135,User_1135,user1135@example.com,3259.54,45.1,BAJA,En observacion,0.4333210009967094,train
+1136,User_1136,user1136@example.com,2508.55,54.93,ALTA,En observacion,0.36580891119324904,train
+1137,User_1137,user1137@example.com,4964.71,32.42,ALTA,Saludable,0.19431827956093892,val
+1138,User_1138,user1138@example.com,3002.56,17.68,MEDIA,Saludable,0.225670559662414,train
+1139,User_1139,user1139@example.com,4570.13,58.52,ALTA,Saludable,0.28467506050999114,val
+1140,User_1140,user1140@example.com,2670.63,15.24,BAJA,En observacion,0.46730708319217373,train
+1141,User_1141,user1141@example.com,5752.75,30.31,BAJA,En observacion,0.4690320959892225,train
+1142,User_1142,user1142@example.com,2839.75,13.0,BAJA,En observacion,0.39018458015571816,test
+1143,User_1143,user1143@example.com,4536.87,42.75,MEDIA,En observacion,0.44595851476665,train
+1144,User_1144,user1144@example.com,5330.34,18.44,ALTA,Saludable,0.11649666378362214,test
+1145,User_1145,user1145@example.com,4849.92,56.02,BAJA,En observacion,0.5140704089130306,train
+1146,User_1146,user1146@example.com,3012.68,48.39,MEDIA,En observacion,0.5427482600858043,val
+1147,User_1147,user1147@example.com,5605.67,30.8,ALTA,Saludable,0.09219447541861849,train
+1148,User_1148,user1148@example.com,4306.2,11.97,BAJA,Saludable,0.2891232483046118,train
+1149,User_1149,user1149@example.com,3244.35,52.17,BAJA,En observacion,0.5944191024598684,train
+1150,User_1150,user1150@example.com,2709.36,37.78,NINGUNA,En riesgo,0.6904817432092086,test
+1151,User_1151,user1151@example.com,5323.7,57.04,ALTA,Saludable,0.3216319893282442,test
+1152,User_1152,user1152@example.com,1341.35,20.72,BAJA,En observacion,0.4442399305770734,train
+1153,User_1153,user1153@example.com,4992.36,43.79,MEDIA,En observacion,0.37364194510053855,val
+1154,User_1154,user1154@example.com,2163.97,48.51,NINGUNA,En riesgo,0.7502818284659255,val
+1155,User_1155,user1155@example.com,3222.21,48.52,ALTA,En observacion,0.39234567028730655,train
+1156,User_1156,user1156@example.com,4238.78,46.03,BAJA,En riesgo,0.6267478204385529,train
+1157,User_1157,user1157@example.com,3588.33,48.77,BAJA,En observacion,0.5238908079956849,train
+1158,User_1158,user1158@example.com,2823.18,19.25,BAJA,En observacion,0.4815651324668743,val
+1159,User_1159,user1159@example.com,4331.22,22.88,ALTA,Saludable,0.20724608146002635,train
+1160,User_1160,user1160@example.com,1841.33,39.26,ALTA,Saludable,0.24275139545496255,train
+1161,User_1161,user1161@example.com,5491.31,30.71,ALTA,Saludable,0.07948962274915045,train
+1162,User_1162,user1162@example.com,6119.22,28.73,MEDIA,Saludable,0.20325923134443113,val
+1163,User_1163,user1163@example.com,1297.51,32.22,NINGUNA,En riesgo,0.6545763766089284,train
+1164,User_1164,user1164@example.com,1509.82,18.94,BAJA,En observacion,0.5624918293569862,train
+1165,User_1165,user1165@example.com,4020.1,26.81,MEDIA,Saludable,0.2917553138241388,train
+1166,User_1166,user1166@example.com,4498.42,37.77,NINGUNA,En riesgo,0.6825154018755328,train
+1167,User_1167,user1167@example.com,4081.38,23.4,ALTA,Saludable,0.17879912825168146,test
+1168,User_1168,user1168@example.com,2075.1,9.97,MEDIA,En observacion,0.34889330149419395,test
+1169,User_1169,user1169@example.com,6010.97,18.99,ALTA,Saludable,0.10877089728667283,train
+1170,User_1170,user1170@example.com,4734.94,38.43,NINGUNA,En observacion,0.5412598024300856,train
+1171,User_1171,user1171@example.com,4654.29,36.67,BAJA,En observacion,0.4953688008437093,train
+1172,User_1172,user1172@example.com,4554.92,40.51,ALTA,Saludable,0.2542947209899138,train
+1173,User_1173,user1173@example.com,3113.32,44.79,BAJA,En observacion,0.4962958771724633,train
+1174,User_1174,user1174@example.com,4366.87,31.43,NINGUNA,En riesgo,0.6118563248626636,train
+1175,User_1175,user1175@example.com,4803.94,52.48,MEDIA,En observacion,0.37380642941927217,train
+1176,User_1176,user1176@example.com,4052.73,21.83,NINGUNA,En observacion,0.5533459175490891,train
+1177,User_1177,user1177@example.com,2106.92,23.6,BAJA,En observacion,0.4910519177061493,train
+1178,User_1178,user1178@example.com,3496.79,48.22,MEDIA,En observacion,0.4774819556272791,train
+1179,User_1179,user1179@example.com,2262.39,15.54,BAJA,En observacion,0.3996173776997062,train
+1180,User_1180,user1180@example.com,1283.03,52.55,MEDIA,En observacion,0.5091330123623896,train
+1181,User_1181,user1181@example.com,6434.41,44.13,ALTA,En observacion,0.3662387932219634,val
+1182,User_1182,user1182@example.com,2040.43,5.0,ALTA,Saludable,0.17806471977514676,train
+1183,User_1183,user1183@example.com,4255.19,14.17,MEDIA,Saludable,0.24422501556761378,train
+1184,User_1184,user1184@example.com,2110.7,25.58,NINGUNA,En riesgo,0.6111324313038962,train
+1185,User_1185,user1185@example.com,2588.87,34.53,MEDIA,En observacion,0.41058078263731723,train
+1186,User_1186,user1186@example.com,3957.99,54.15,BAJA,En observacion,0.5963638615550854,test
+1187,User_1187,user1187@example.com,3231.95,22.73,BAJA,En observacion,0.3700558002156339,train
+1188,User_1188,user1188@example.com,4537.43,17.7,BAJA,En observacion,0.46143891461823644,train
+1189,User_1189,user1189@example.com,2352.34,21.25,ALTA,Saludable,0.2178498358782567,test
+1190,User_1190,user1190@example.com,4138.99,51.51,BAJA,En riesgo,0.6172574857436567,val
+1191,User_1191,user1191@example.com,4929.6,35.0,BAJA,En observacion,0.5292370218955658,train
+1192,User_1192,user1192@example.com,4811.26,17.27,ALTA,Saludable,0.15997757064161533,train
+1193,User_1193,user1193@example.com,1481.71,28.11,BAJA,En observacion,0.4218073555227307,train
+1194,User_1194,user1194@example.com,4296.63,29.58,ALTA,Saludable,0.22337048940507262,train
+1195,User_1195,user1195@example.com,2307.05,73.32,BAJA,En riesgo,0.6645730798732864,train
+1196,User_1196,user1196@example.com,3994.12,37.94,NINGUNA,En riesgo,0.6006368355132,train
+1197,User_1197,user1197@example.com,4005.5,44.86,BAJA,En observacion,0.4732464378010285,train
+1198,User_1198,user1198@example.com,5304.05,34.96,BAJA,En observacion,0.43840547991053475,train
+1199,User_1199,user1199@example.com,4614.44,22.43,MEDIA,Saludable,0.2504446271450323,train
+1200,User_1200,user1200@example.com,4282.16,58.85,ALTA,En observacion,0.3632380610447001,train
