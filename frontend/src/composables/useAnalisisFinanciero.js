@@ -43,15 +43,14 @@ export function useAnalisisFinanciero() {
 
     const ingreso = Number(usuarioStore.ingresoDisponible || 0)
     const ahora = new Date()
-    const mesActual = ahora.getMonth()
-    const anioActual = ahora.getFullYear()
+    const hace30Dias = new Date(ahora.getTime() - 30 * 24 * 60 * 60 * 1000)
 
     const transacciones = (usuarioStore.transacciones || [])
       .filter((t) => t.descripcion?.trim() && t.monto != null)
       .filter((t) => {
         if (!t.fecha) return false
         const fecha = new Date(`${t.fecha}T00:00:00`)
-        return fecha.getMonth() === mesActual && fecha.getFullYear() === anioActual
+        return fecha >= hace30Dias && fecha <= ahora
       })
 
     const resumenGastos = calcularResumenGastos(transacciones)
