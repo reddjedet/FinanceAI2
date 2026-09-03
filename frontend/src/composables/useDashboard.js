@@ -42,27 +42,28 @@ export function useDashboard() {
 
   const ingresoOriginal = computed(() => Number(store.ingresoOriginal || store.ingresoDisponible || 0))
 
-  // Sobrante del mes anterior
-  const sobranteMesAnterior = computed(() => {
+  // Resumen del mes anterior
+  const resumenMesAnterior = computed(() => {
     const pMes = mes === 0 ? 11 : mes - 1
     const pAnio = mes === 0 ? anio - 1 : anio
     const pMesBackend = pMes + 1 // 1-indexed para el backend
     
-    const resumen = (store.resumenesMensuales || []).find(
+    return (store.resumenesMensuales || []).find(
       (r) => r.mes === pMesBackend && r.anio === pAnio
-    )
-    return resumen ? Number(resumen.sobranteFinal || 0) : 0
+    ) || null
+  })
+
+  // Sobrante del mes anterior
+  const sobranteMesAnterior = computed(() => {
+    return resumenMesAnterior.value ? Number(resumenMesAnterior.value.sobranteFinal || 0) : 0
   })
 
   // Porcentaje de ahorro del mes anterior
   const porcentajeAhorroMesAnterior = computed(() => {
-    const pMes = mes === 0 ? 11 : mes - 1
-    const pAnio = mes === 0 ? anio - 1 : anio
-    const pMesBackend = pMes + 1
-    
+    const resumen = resumenMesAnterior.value
     const sueldo = Number(resumen?.ingresoFijo || resumen?.sueldoBase || 0)
     if (resumen && sueldo > 0) {
-      return Math.round((Number(resumen.sobranteFinal) / sueldo) * 100)
+      return Math.round((Number(resumen.sobranteFinal || 0) / sueldo) * 100)
     }
     return 0
   })
@@ -70,10 +71,14 @@ export function useDashboard() {
   // Saldo disponible = ingreso original - gasto del mes actual
   const saldoDisponible = computed(() => Math.max(0, ingresoOriginal.value - gastoMes.value))
 
-  // Ahorro = transacciones de categoría "ahorros" del mes actual + sobrante del mes anterior
+  // Ahorro = transacciones de categoría "ahorros" o "inversion" del mes actual + sobrante del mes anterior
   const ahorroMes = computed(() => {
     const ahorroTransacciones = transaccionesArray.value
-      .filter((t) => mismoMes(t.fecha, anio, mes) && normalizarCategoria(t.categoria) === 'ahorros')
+      .filter((t) => {
+        if (!mismoMes(t.fecha, anio, mes)) return false
+        const cat = normalizarCategoria(t.categoria)
+        return cat === 'ahorros' || cat === 'inversion'
+      })
       .reduce((sum, t) => sum + Number(t.monto || 0), 0)
     return ahorroTransacciones + sobranteMesAnterior.value
   })

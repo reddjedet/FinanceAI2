@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.financeai.transactions.model.FrecuenciaAhorro;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -17,6 +18,7 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 @Component
 public class MlServiceClient {
 
@@ -55,10 +57,10 @@ public class MlServiceClient {
                     return root.get("category").asText();
                 }
             } else {
-                System.err.println("ml-service classify error (" + response.statusCode() + "): " + response.body());
+                log.warn("ml-service classify error status {}: {}", response.statusCode(), response.body());
             }
         } catch (Exception e) {
-            System.err.println("Error al comunicarse con ml-service para clasificar transacción: " + e.getMessage());
+            log.error("Error al comunicarse con ml-service para clasificar transacción: {}", e.getMessage());
         }
         return "Ocio";
     }
@@ -85,10 +87,10 @@ public class MlServiceClient {
             if (response.statusCode() == 200) {
                 return objectMapper.readValue(response.body(), Map.class);
             } else {
-                System.err.println("ml-service health error (" + response.statusCode() + "): " + response.body());
+                log.warn("ml-service health error status {}: {}", response.statusCode(), response.body());
             }
         } catch (Exception e) {
-            System.err.println("Error al evaluar salud financiera con ml-service: " + e.getMessage());
+            log.error("Error al evaluar salud financiera con ml-service: {}", e.getMessage());
         }
         return Map.of("financial_profile", "En observacion", "risk_level", "MEDIO");
     }
@@ -117,10 +119,10 @@ public class MlServiceClient {
             if (response.statusCode() == 200) {
                 return objectMapper.readValue(response.body(), Map.class);
             } else {
-                System.err.println("ml-service recommendations error (" + response.statusCode() + "): " + response.body());
+                log.warn("ml-service recommendations error status {}: {}", response.statusCode(), response.body());
             }
         } catch (Exception e) {
-            System.err.println("Error al obtener recomendaciones de ml-service: " + e.getMessage());
+            log.error("Error al obtener recomendaciones de ml-service: {}", e.getMessage());
         }
         return Map.of("summary", "Mantén un control prudente de tus gastos fijos y automatiza tu ahorro mensual.");
     }

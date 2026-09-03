@@ -26,6 +26,16 @@ public class GestorDeErrores {
         ));
     }
 
+    @ExceptionHandler(org.springframework.security.access.AccessDeniedException.class)
+    public ResponseEntity<?> tratarAccesoDenegado(org.springframework.security.access.AccessDeniedException e) {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(Map.of(
+                "timestamp", LocalDateTime.now().toString(),
+                "status", 403,
+                "error", "Acceso denegado",
+                "message", e.getMessage()
+        ));
+    }
+
     @ExceptionHandler(ValidationException.class)
     public ResponseEntity<?> tratarErrorValidacion(ValidationException e) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(

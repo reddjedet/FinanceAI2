@@ -3,6 +3,7 @@ package com.financeai.transactions.client;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.financeai.transactions.dto.UserProfileDTO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
 
+@Slf4j
 @Component
 public class AuthServiceClient {
 
@@ -46,10 +48,10 @@ public class AuthServiceClient {
             if (response.statusCode() == 200) {
                 return objectMapper.readValue(response.body(), UserProfileDTO.class);
             } else {
-                System.err.println("auth-service error (" + response.statusCode() + "): " + response.body());
+                log.warn("auth-service error status {}: {}", response.statusCode(), response.body());
             }
         } catch (Exception e) {
-            System.err.println("Error al comunicarse con auth-service para obtener usuario " + usuarioId + ": " + e.getMessage());
+            log.error("Error al comunicarse con auth-service para obtener usuario {}: {}", usuarioId, e.getMessage());
         }
         return null;
     }

@@ -20,14 +20,18 @@ public class PerfilFinancieroCalculatorService {
 
     public BigDecimal calcularPorcentajeEndeudamiento(Long usuarioId, String tokenHeader) {
         UserProfileDTO usuario = authServiceClient.obtenerPerfilUsuario(usuarioId, tokenHeader);
+        return calcularPorcentajeEndeudamiento(usuario, usuarioId);
+    }
+
+    public BigDecimal calcularPorcentajeEndeudamiento(UserProfileDTO usuario, Long usuarioId) {
         if (usuario == null || usuario.ingresoMensual() == null || usuario.ingresoMensual().compareTo(BigDecimal.ZERO) <= 0) {
             return BigDecimal.ZERO;
         }
 
         LocalDate hoy = LocalDate.now();
-        LocalDate inicioMes = hoy.withDayOfMonth(1);
+        LocalDate desde = hoy.minusDays(30);
 
-        BigDecimal gastosFijos = transaccionRepository.sumarGastosFijosPorRango(usuarioId, inicioMes, hoy);
+        BigDecimal gastosFijos = transaccionRepository.sumarGastosFijosPorRango(usuarioId, desde, hoy);
         if (gastosFijos == null) {
             gastosFijos = BigDecimal.ZERO;
         }
@@ -39,9 +43,9 @@ public class PerfilFinancieroCalculatorService {
 
     public FrecuenciaAhorro calcularFrecuenciaAhorro(Long usuarioId) {
         LocalDate hoy = LocalDate.now();
-        LocalDate inicioMes = hoy.withDayOfMonth(1);
+        LocalDate desde = hoy.minusDays(30);
 
-        long aportesInversion = transaccionRepository.contarTransaccionesInversionPorRango(usuarioId, inicioMes, hoy);
+        long aportesInversion = transaccionRepository.contarTransaccionesInversionPorRango(usuarioId, desde, hoy);
 
         if (aportesInversion >= 4) {
             return FrecuenciaAhorro.ALTA;

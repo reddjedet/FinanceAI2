@@ -7,6 +7,7 @@ import com.financeai.transactions.model.ResumenMensual;
 import com.financeai.transactions.model.Transaccion;
 import com.financeai.transactions.repository.ResumenMensualRepository;
 import com.financeai.transactions.repository.TransaccionRepository;
+import com.financeai.transactions.security.SecurityUtils;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
@@ -28,23 +29,10 @@ public class TransaccionService {
 
     @Transactional
     public RespuestaTransaccionDTO crearTransaccion(IngresarTransaccionDTO dto, String authHeader) {
+        SecurityUtils.validateUserOwnership(dto.idUsuario());
         UserProfileDTO usuario = authServiceClient.obtenerPerfilUsuario(dto.idUsuario(), authHeader);
         if (usuario == null || Boolean.FALSE.equals(usuario.activo())) {
             throw new ValidationException("Usuario no válido o inactivo.");
-        }
-
-        BigDecimal ingresoMensual = usuario.ingresoMensual();
-        int mes = dto.fecha().getMonthValue();
-        int anio = dto.fecha().getYear();
-
-        BigDecimal gastadoEnElMes = transaccionRepository.obtenerTotalGastadoEnMes(dto.idUsuario(), mes, anio);
-        if (gastadoEnElMes == null) {
-            gastadoEnElMes = BigDecimal.ZERO;
-        }
-
-        BigDecimal saldoDisponible = ingresoMensual.subtract(gastadoEnElMes);
-        if (saldoDisponible.compareTo(dto.monto()) < 0) {
-            throw new ValidationException("No tiene suficiente saldo disponible para realizar este gasto en el periodo actual.");
         }
 
         // Categorización inteligente con ml-service si no se especificó o se dejó vacía
@@ -66,6 +54,7 @@ public class TransaccionService {
 
     @Transactional(readOnly = true)
     public List<RespuestaTransaccionDTO> obtenerTransaccionesPorRango(Long usuarioId, LocalDate desde, LocalDate hasta) {
+        SecurityUtils.validateUserOwnership(usuarioId);
         if (desde != null && hasta != null) {
             return transaccionRepository.findByUsuarioIdAndFechaBetweenOrderByFechaDesc(usuarioId, desde, hasta).stream()
                     .map(RespuestaTransaccionDTO::new)
@@ -80,6 +69,7 @@ public class TransaccionService {
     public RespuestaTransaccionDTO actualizarTransaccion(Long id, ActualizarTransaccionDTO dto) {
         Transaccion t = transaccionRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Transacción no encontrada con ID: " + id));
+        SecurityUtils.validateUserOwnership(t.getUsuarioId());
 
         if (dto.descripcion() != null && !dto.descripcion().isBlank()) {
             t.setDescripcion(dto.descripcion().trim());
@@ -99,14 +89,15 @@ public class TransaccionService {
 
     @Transactional
     public void eliminarTransaccion(Long id) {
-        if (!transaccionRepository.existsById(id)) {
-            throw new EntityNotFoundException("Transacción no encontrada con ID: " + id);
-        }
-        transaccionRepository.deleteById(id);
+        Transaccion t = transaccionRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Transacción no encontrada con ID: " + id));
+        SecurityUtils.validateUserOwnership(t.getUsuarioId());
+        transaccionRepository.delete(t);
     }
 
     @Transactional(readOnly = true)
     public BigDecimal calcularSaldoDisponible(Long usuarioId, int mes, int anio, String authHeader) {
+        SecurityUtils.validateUserOwnership(usuarioId);
         UserProfileDTO usuario = authServiceClient.obtenerPerfilUsuario(usuarioId, authHeader);
         if (usuario == null) {
             throw new EntityNotFoundException("Usuario no encontrado.");

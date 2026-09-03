@@ -23,13 +23,14 @@ public class UsuarioService {
 
     @Transactional
     public RespuestaUsuarioDTO registrarUsuario(IngresarUsuarioDTO dto) {
-        if (usuarioRepository.existsByEmail(dto.email())) {
+        String emailNormalizado = dto.email() != null ? dto.email().trim().toLowerCase() : "";
+        if (usuarioRepository.existsByEmail(emailNormalizado)) {
             throw new IllegalArgumentException("El correo electrónico ya se encuentra registrado.");
         }
 
         Usuario usuario = Usuario.builder()
                 .nombre(dto.nombre().trim())
-                .email(dto.email().trim().toLowerCase())
+                .email(emailNormalizado)
                 .password(passwordEncoder.encode(dto.password()))
                 .ingresoMensual(dto.ingresoMensual())
                 .activo(true)
@@ -57,8 +58,7 @@ public class UsuarioService {
 
     @Transactional(readOnly = true)
     public List<RespuestaUsuarioDTO> listarUsuarios() {
-        return usuarioRepository.findAll().stream()
-                .filter(u -> Boolean.TRUE.equals(u.getActivo()))
+        return usuarioRepository.findAllByActivoTrue().stream()
                 .map(RespuestaUsuarioDTO::new)
                 .toList();
     }

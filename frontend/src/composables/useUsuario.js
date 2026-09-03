@@ -18,12 +18,11 @@ export function useUsuario() {
     store.setError('')
     try {
       const usuario = await obtenerUsuario(id)
-      const ingresoOriginalPrevio = store.ingresoOriginal
       store.setUsuario({
         id: usuario.id,
         nombre: usuario.nombre || store.nombre,
         ingresoDisponible: usuario.ingresoMensual,
-        ingresoOriginal: ingresoOriginalPrevio || usuario.ingresoMensual,
+        ingresoOriginal: usuario.ingresoMensual,
       })
       
       if (id !== null && id !== 0) {

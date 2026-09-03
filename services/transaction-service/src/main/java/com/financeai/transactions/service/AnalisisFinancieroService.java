@@ -7,6 +7,7 @@ import com.financeai.transactions.dto.UserProfileDTO;
 import com.financeai.transactions.model.AnalisisFinanciero;
 import com.financeai.transactions.model.FrecuenciaAhorro;
 import com.financeai.transactions.repository.AnalisisFinancieroRepository;
+import com.financeai.transactions.security.SecurityUtils;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -29,15 +30,16 @@ public class AnalisisFinancieroService {
 
     @Transactional
     public RespuestaAnalisisFinancieroDTO generarAnalisis(Long usuarioId, String authHeader) {
+        SecurityUtils.validateUserOwnership(usuarioId);
         UserProfileDTO usuario = authServiceClient.obtenerPerfilUsuario(usuarioId, authHeader);
         if (usuario == null) {
             throw new EntityNotFoundException("Usuario no encontrado con ID: " + usuarioId);
         }
 
         LocalDate hoy = LocalDate.now();
-        LocalDate inicioMes = hoy.withDayOfMonth(1);
+        LocalDate rangoInicio = hoy.minusDays(30);
 
-        BigDecimal endeudamiento = calculatorService.calcularPorcentajeEndeudamiento(usuarioId, authHeader);
+        BigDecimal endeudamiento = calculatorService.calcularPorcentajeEndeudamiento(usuario, usuarioId);
         FrecuenciaAhorro ahorro = calculatorService.calcularFrecuenciaAhorro(usuarioId);
 
         // Invocación al microservicio de ML
@@ -50,7 +52,7 @@ public class AnalisisFinancieroService {
         AnalisisFinanciero analisis = AnalisisFinanciero.builder()
                 .usuarioId(usuarioId)
                 .fechaAnalisis(LocalDateTime.now())
-                .rangoInicio(inicioMes)
+                .rangoInicio(rangoInicio)
                 .rangoFin(hoy)
                 .perfilFinanciero(perfil)
                 .porcentajeEndeudamiento(endeudamiento)
@@ -63,6 +65,7 @@ public class AnalisisFinancieroService {
 
     @Transactional(readOnly = true)
     public List<RespuestaAnalisisFinancieroDTO> obtenerHistorial(Long usuarioId) {
+        SecurityUtils.validateUserOwnership(usuarioId);
         return analisisRepository.findByUsuarioIdOrderByFechaAnalisisDesc(usuarioId).stream()
                 .map(RespuestaAnalisisFinancieroDTO::new)
                 .toList();
